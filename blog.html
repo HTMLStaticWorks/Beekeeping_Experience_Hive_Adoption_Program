@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <title>The Buzz Blog | BeeHive Education</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -66,16 +67,16 @@
             <!-- Actions Section -->
             <div class="flex-1 flex justify-end items-center gap-4">
                 <div class="hidden lg:flex items-center gap-4 border-l border-gray-300 dark:border-gray-700 pl-8">
-                    <button id="theme-toggle" class="p-2 hover:bg-honey-gold/10 rounded-full transition-colors">
+                    <button id="theme-toggle" class="p-2 hover:bg-honey-gold/10 rounded-full transition-all duration-300 hover:scale-110 active:scale-95">
                         <i id="theme-icon" data-lucide="moon" class="w-5 h-5"></i>
                     </button>
                     <button id="rtl-toggle"
-                        class="p-2 hover:bg-honey-gold/10 rounded-full transition-colors text-xs font-bold">RTL</button>
+                        class="p-2 hover:bg-honey-gold/10 rounded-full transition-all duration-300 text-xs font-bold hover:scale-110 active:scale-95">RTL</button>
                     <a href="signup.html"
-                        class="bg-honey-gold text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-honey-gold/30 transition-all active:scale-95">Signup</a>
+                        class="bg-honey-gold text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-dark-brown dark:hover:bg-white dark:hover:text-dark-brown hover:shadow-xl hover:shadow-honey-gold/20 hover:-translate-y-0.5 transition-all duration-300 active:scale-95">Signup</a>
                 </div>
                 <!-- Mobile Menu Btn -->
-                <button id="mobile-menu-btn" class="lg:hidden p-2">
+                <button id="mobile-menu-btn" class="lg:hidden p-2 hover:bg-honey-gold/10 rounded-full transition-all hover:scale-110">
                     <i data-lucide="menu" class="w-6 h-6"></i>
                 </button>
             </div>
@@ -102,17 +103,17 @@
                 </div>
             </div>
             <a href="signup.html"
-                class="w-full bg-honey-gold text-white py-3 rounded-xl text-center font-bold">Signup</a>
+                class="w-full bg-honey-gold text-white py-4 rounded-xl text-center font-bold hover:bg-dark-brown dark:hover:bg-white dark:hover:text-dark-brown transition-all duration-300 active:scale-95 shadow-lg shadow-honey-gold/10">Signup</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative h-[60vh] flex items-center justify-center overflow-hidden">
+    <header class="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-24 pb-12 md:pt-0 md:pb-0">
         <div class="absolute inset-0 z-0">
             <img src="https://images.pexels.com/photos/34093799/pexels-photo-34093799.jpeg" alt="Bee Discovery"
                 class="w-full h-full object-cover scale-105 animate-slow-zoom">
             <div
-                class="absolute inset-0 bg-gradient-to-b from-forest-green/70 via-forest-green/40 to-[#faf7f2] dark:to-zinc-950">
+                class="absolute inset-0 bg-gradient-to-b from-forest-green/90 via-forest-green/50 to-[#faf7f2] dark:to-zinc-950">
             </div>
         </div>
 
@@ -129,12 +130,12 @@
 
             <div class="mt-10 flex flex-wrap justify-center gap-4">
                 <button
-                    class="px-8 py-3 bg-honey-gold text-white rounded-full text-xs font-bold uppercase tracking-widest shadow-lg shadow-honey-gold/30">All
+                    class="px-10 py-4 bg-honey-gold text-white rounded-full text-xs font-bold uppercase tracking-widest shadow-xl shadow-honey-gold/40 hover:scale-105 transition-transform active:scale-95">All
                     Stories</button>
                 <button
-                    class="px-8 py-3 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-honey-gold transition-colors">Conservation</button>
+                    class="px-10 py-4 bg-white/20 backdrop-blur-xl text-white border border-white/40 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-forest-green transition-all shadow-lg active:scale-95">Conservation</button>
                 <button
-                    class="px-8 py-3 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-honey-gold transition-colors">Honey
+                    class="px-10 py-4 bg-white/20 backdrop-blur-xl text-white border border-white/40 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-forest-green transition-all shadow-lg active:scale-95">Honey
                     Health</button>
             </div>
         </div>
@@ -145,7 +146,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                 <!-- Article 1 -->
-                <article class="group cursor-pointer" data-aos="fade-up">
+                <article class="group cursor-pointer flex flex-col" data-aos="fade-up">
                     <div class="aspect-video rounded-[2.5rem] overflow-hidden mb-8 shadow-lg relative">
                         <img src="https://images.pexels.com/photos/36533552/pexels-photo-36533552.jpeg" alt="Blog 1"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
@@ -153,19 +154,19 @@
                             class="absolute top-6 left-6 bg-white/90 backdrop-blur px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-honey-gold">
                             Conservation</div>
                     </div>
-                    <div class="px-4">
+                    <div class="px-4 flex flex-col flex-grow">
                         <span class="text-xs text-gray-400 font-semibold mb-3 block">May 12, 2026 • 5 min read</span>
                         <h3 class="text-2xl font-bold playfair mb-4 group-hover:text-honey-gold transition-colors">The
                             Secret Language of Bees: Understanding the Waggle Dance</h3>
                         <p class="text-gray-500 text-sm leading-relaxed mb-6">Discover how honey bees communicate the
                             location of nectar-rich flower patches to their sisters through complex movements...</p>
                         <a href="#"
-                            class="font-bold text-sm flex items-center gap-2 text-forest-green dark:text-honey-gold group-hover:gap-4 transition-all">Read
+                            class="font-bold text-sm flex items-center gap-2 text-forest-green dark:text-honey-gold group-hover:gap-4 transition-all mt-auto">Read
                             Full Story <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
                     </div>
                 </article>
                 <!-- Article 2 -->
-                <article class="group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                <article class="group cursor-pointer flex flex-col" data-aos="fade-up" data-aos-delay="100">
                     <div class="aspect-video rounded-[2.5rem] overflow-hidden mb-8 shadow-lg relative">
                         <img src="https://images.pexels.com/photos/27907488/pexels-photo-27907488.jpeg" alt="Blog 2"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
@@ -173,7 +174,7 @@
                             class="absolute top-6 left-6 bg-white/90 backdrop-blur px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-honey-gold">
                             Honey Health</div>
                     </div>
-                    <div class="px-4">
+                    <div class="px-4 flex flex-col flex-grow">
                         <span class="text-xs text-gray-400 font-semibold mb-3 block">May 08, 2026 • 8 min read</span>
                         <h3 class="text-2xl font-bold playfair mb-4 group-hover:text-honey-gold transition-colors">Raw
                             vs Processed Honey: Why Real Honey Matters for Your Immune System</h3>
@@ -181,12 +182,12 @@
                             pasteurized and filtered, stripping away the essential enzymes and pollen. Here's why raw is
                             king...</p>
                         <a href="#"
-                            class="font-bold text-sm flex items-center gap-2 text-forest-green dark:text-honey-gold group-hover:gap-4 transition-all">Read
+                            class="font-bold text-sm flex items-center gap-2 text-forest-green dark:text-honey-gold group-hover:gap-4 transition-all mt-auto">Read
                             Full Story <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
                     </div>
                 </article>
                 <!-- Article 3 -->
-                <article class="group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                <article class="group cursor-pointer flex flex-col" data-aos="fade-up" data-aos-delay="200">
                     <div class="aspect-video rounded-[2.5rem] overflow-hidden mb-8 shadow-lg relative">
                         <img src="https://images.pexels.com/photos/5350295/pexels-photo-5350295.jpeg" alt="Blog 3"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
@@ -194,7 +195,7 @@
                             class="absolute top-6 left-6 bg-white/90 backdrop-blur px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-honey-gold">
                             Beekeeping</div>
                     </div>
-                    <div class="px-4">
+                    <div class="px-4 flex flex-col flex-grow">
                         <span class="text-xs text-gray-400 font-semibold mb-3 block">May 01, 2026 • 12 min read</span>
                         <h3 class="text-2xl font-bold playfair mb-4 group-hover:text-honey-gold transition-colors">How
                             to Support Native Pollinators in Your Own Backyard This Summer</h3>
@@ -202,21 +203,21 @@
                             Learn how to plant a pollinator-friendly garden even on a small balcony or urban space...
                         </p>
                         <a href="#"
-                            class="font-bold text-sm flex items-center gap-2 text-forest-green dark:text-honey-gold group-hover:gap-4 transition-all">Read
+                            class="font-bold text-sm flex items-center gap-2 text-forest-green dark:text-honey-gold group-hover:gap-4 transition-all mt-auto">Read
                             Full Story <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
                     </div>
                 </article>
             </div>
 
             <!-- Featured Section (Honey Health) -->
-            <div class="mt-24 p-12 rounded-[4rem] bg-forest-green text-white flex flex-col lg:flex-row items-center gap-16"
+            <div class="mt-24 p-6 md:p-12 rounded-[3rem] md:rounded-[4rem] bg-forest-green text-white flex flex-col lg:flex-row items-center gap-10 md:gap-16"
                 data-aos="zoom-in">
                 <div class="lg:w-1/2">
                     <img src="https://images.pexels.com/photos/4111270/pexels-photo-4111270.jpeg" alt="Health"
                         class="rounded-[3rem] shadow-2xl h-[400px] w-full object-cover">
                 </div>
-                <div class="lg:w-1/2">
-                    <h2 class="text-4xl font-bold playfair mb-6">The <span class="text-honey-gold">Healing Power</span>
+                <div class="lg:w-1/2 flex flex-col items-center text-center lg:items-start lg:text-left">
+                    <h2 class="text-3xl md:text-4xl font-bold playfair mb-6">The <span class="text-honey-gold">Healing Power</span>
                         of Real Honey</h2>
                     <p class="text-gray-300 mb-8 text-lg leading-relaxed">Did you know raw honey has been used for wound
                         healing and throat soothing for over 4,000 years? Our latest deep-dive explores the
@@ -229,8 +230,7 @@
                         <li class="flex items-center gap-3"><i data-lucide="check-circle" class="text-honey-gold"></i>
                             Soothes Digestive Issues</li>
                     </ul>
-                    <a href="#" class="px-8 py-3 bg-honey-gold text-white rounded-full font-bold">Download Health
-                        Guide</a>
+                    <a href="#" class="inline-block px-6 md:px-8 py-3.5 bg-honey-gold text-white rounded-full font-bold text-sm md:text-base hover:bg-white hover:text-forest-green transition-all shadow-lg active:scale-95 whitespace-nowrap">Download Health Guide</a>
                 </div>
             </div>
         </div>
@@ -340,9 +340,11 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <div>
-                    <a href="index.html" class="flex items-center gap-2 mb-8">
-                        <span
-                            class="text-2xl font-bold playfair tracking-tight text-dark-brown dark:text-white">Bee<span class="text-honey-gold">Hive</span></span>
+                    <a href="index.html" class="flex items-center gap-2 mb-8 group">
+                        <i data-lucide="hexagon"
+                            class="w-8 h-8 text-honey-gold fill-honey-gold/20 group-hover:rotate-12 transition-transform"></i>
+                        <span class="text-2xl font-bold playfair tracking-tight text-dark-brown dark:text-white">Bee<span
+                                class="text-honey-gold">Hive</span></span>
                     </a>
                     <p class="text-gray-400 text-sm leading-relaxed mb-6">Pioneering sustainable beekeeping and honey
                         experiences since 2018. Join us in protecting the heartbeat of our ecosystem.</p>

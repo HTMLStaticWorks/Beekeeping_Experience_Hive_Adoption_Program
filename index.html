@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <title>BeeHive Sponsorship | Premium Honey Harvest Experience</title>
     <meta name="description"
         content="Experience the magic of beekeeping. Sponsor a hive, join the harvest, and enjoy organic honey from your own bees.">
@@ -71,16 +72,16 @@
             <!-- Actions Section -->
             <div class="flex-1 flex justify-end items-center gap-4">
                 <div class="hidden lg:flex items-center gap-4 border-l border-gray-300 dark:border-gray-700 pl-8">
-                    <button id="theme-toggle" class="p-2 hover:bg-honey-gold/10 rounded-full transition-colors">
+                    <button id="theme-toggle" class="p-2 hover:bg-honey-gold/10 rounded-full transition-all duration-300 hover:scale-110 active:scale-95">
                         <i id="theme-icon" data-lucide="moon" class="w-5 h-5"></i>
                     </button>
                     <button id="rtl-toggle"
-                        class="p-2 hover:bg-honey-gold/10 rounded-full transition-colors text-xs font-bold">RTL</button>
+                        class="p-2 hover:bg-honey-gold/10 rounded-full transition-all duration-300 text-xs font-bold hover:scale-110 active:scale-95">RTL</button>
                     <a href="signup.html"
-                        class="bg-honey-gold text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-honey-gold/30 transition-all active:scale-95">Signup</a>
+                        class="bg-honey-gold text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-dark-brown dark:hover:bg-white dark:hover:text-dark-brown hover:shadow-xl hover:shadow-honey-gold/20 hover:-translate-y-0.5 transition-all duration-300 active:scale-95">Signup</a>
                 </div>
                 <!-- Mobile Menu Btn -->
-                <button id="mobile-menu-btn" class="lg:hidden p-2">
+                <button id="mobile-menu-btn" class="lg:hidden p-2 hover:bg-honey-gold/10 rounded-full transition-all hover:scale-110">
                     <i data-lucide="menu" class="w-6 h-6"></i>
                 </button>
             </div>
@@ -100,14 +101,14 @@
             <a href="contact.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Contact</a>
             <div class="flex items-center justify-between mt-4">
                 <div class="flex gap-4">
-                    <button id="theme-toggle-mobile" class="p-2 bg-gray-100 dark:bg-zinc-900 rounded-full"><i
+                    <button id="theme-toggle-mobile" class="p-2 bg-gray-100 dark:bg-zinc-900 rounded-full hover:bg-honey-gold/10 transition-all duration-300 hover:scale-110 active:scale-95"><i
                             data-lucide="moon" class="w-5 h-5"></i></button>
                     <button id="rtl-toggle-mobile"
-                        class="px-4 py-2 bg-gray-100 dark:bg-zinc-900 rounded-lg text-xs font-bold uppercase">RTL</button>
+                        class="px-4 py-2 bg-gray-100 dark:bg-zinc-900 rounded-lg text-xs font-bold uppercase hover:bg-honey-gold/10 transition-all duration-300 hover:scale-110 active:scale-95">RTL</button>
                 </div>
             </div>
             <a href="signup.html"
-                class="w-full bg-honey-gold text-white py-3 rounded-xl text-center font-bold">Signup</a>
+                class="w-full bg-honey-gold text-white py-4 rounded-xl text-center font-bold hover:bg-dark-brown dark:hover:bg-white dark:hover:text-dark-brown transition-all duration-300 active:scale-95 shadow-lg shadow-honey-gold/10">Signup</a>
         </div>
     </nav>
 
@@ -151,12 +152,6 @@
         </div>
     </header>
 
-    <!-- Scroll Indicator -->
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
-        <i data-lucide="mouse" class="w-6 h-6"></i>
-    </div>
-    </header>
-
     <!-- Sponsorship Levels -->
     <section id="sponsorships" class="py-24 px-6 md:px-12 bg-warm-beige/20 dark:bg-zinc-950">
         <div class="max-w-7xl mx-auto">
@@ -169,7 +164,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Beginner Plan -->
-                <div class="glass-card p-8 rounded-3xl border border-honey-gold/20 dark:border-gray-800 transition-all-300 hover:-translate-y-2 hover:shadow-2xl flex flex-col"
+                <div class="glass-card p-8 rounded-3xl border border-honey-gold/20 dark:border-gray-800 transition-all duration-300 hover:border-honey-gold/50 hover:-translate-y-2 hover:shadow-2xl flex flex-col items-center text-center"
                     data-aos="fade-up" data-aos-delay="100">
                     <div class="w-14 h-14 bg-honey-gold/10 rounded-2xl flex items-center justify-center mb-6">
                         <i data-lucide="sprout" class="text-honey-gold w-8 h-8"></i>
@@ -179,13 +174,13 @@
                     <div class="text-4xl font-bold mb-8">$199<span class="text-base font-normal text-gray-500">
                             /year</span></div>
                     <ul class="space-y-4 mb-10 flex-grow">
-                        <li class="flex items-center gap-3 text-sm"><i data-lucide="check"
+                        <li class="flex items-center gap-3 text-sm justify-center"><i data-lucide="check"
                                 class="text-honey-gold w-5 h-5"></i> 2kg Organic Honey Share</li>
-                        <li class="flex items-center gap-3 text-sm"><i data-lucide="check"
+                        <li class="flex items-center gap-3 text-sm justify-center"><i data-lucide="check"
                                 class="text-honey-gold w-5 h-5"></i> 1 Guided Farm Visit</li>
-                        <li class="flex items-center gap-3 text-sm"><i data-lucide="check"
+                        <li class="flex items-center gap-3 text-sm justify-center"><i data-lucide="check"
                                 class="text-honey-gold w-5 h-5"></i> Certificate of Adoption</li>
-                        <li class="flex items-center gap-3 text-sm text-gray-400"><i data-lucide="x"
+                        <li class="flex items-center gap-3 text-sm text-gray-400 justify-center"><i data-lucide="x"
                                 class="text-gray-400 w-5 h-5"></i> Virtual Hive Cam Access</li>
                     </ul>
                     <a href="signup.html"
@@ -194,7 +189,7 @@
                 </div>
 
                 <!-- Premium Plan -->
-                <div class="relative glass-card p-8 rounded-3xl border-2 border-honey-gold dark:border-honey-gold transition-all-300 hover:-translate-y-2 hover:shadow-2xl flex flex-col bg-honey-gold/5"
+                <div class="relative glass-card p-8 rounded-3xl border-2 border-honey-gold dark:border-honey-gold transition-all duration-300 hover:border-honey-gold/50 hover:-translate-y-2 hover:shadow-2xl flex flex-col items-center text-center bg-honey-gold/5"
                     data-aos="fade-up" data-aos-delay="200">
                     <div
                         class="absolute -top-4 left-1/2 -translate-x-1/2 bg-honey-gold text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
@@ -207,13 +202,13 @@
                     <div class="text-4xl font-bold mb-8">$499<span class="text-base font-normal text-gray-500">
                             /year</span></div>
                     <ul class="space-y-4 mb-10 flex-grow">
-                        <li class="flex items-center gap-3 text-sm"><i data-lucide="check"
+                        <li class="flex items-center gap-3 text-sm justify-center"><i data-lucide="check"
                                 class="text-honey-gold w-5 h-5"></i> 8kg Seasonal Honey Share</li>
-                        <li class="flex items-center gap-3 text-sm"><i data-lucide="check"
+                        <li class="flex items-center gap-3 text-sm justify-center"><i data-lucide="check"
                                 class="text-honey-gold w-5 h-5"></i> 4 Guided Farm Visits</li>
-                        <li class="flex items-center gap-3 text-sm"><i data-lucide="check"
+                        <li class="flex items-center gap-3 text-sm justify-center"><i data-lucide="check"
                                 class="text-honey-gold w-5 h-5"></i> Name your Queen Bee</li>
-                        <li class="flex items-center gap-3 text-sm"><i data-lucide="check"
+                        <li class="flex items-center gap-3 text-sm justify-center"><i data-lucide="check"
                                 class="text-honey-gold w-5 h-5"></i> 24/7 Virtual Hive Access</li>
                     </ul>
                     <a href="signup.html"
@@ -222,7 +217,7 @@
                 </div>
 
                 <!-- Family Plan -->
-                <div class="glass-card p-8 rounded-3xl border border-honey-gold/20 dark:border-gray-800 transition-all-300 hover:-translate-y-2 hover:shadow-2xl flex flex-col"
+                <div class="glass-card p-8 rounded-3xl border border-honey-gold/20 dark:border-gray-800 transition-all duration-300 hover:border-honey-gold/50 hover:-translate-y-2 hover:shadow-2xl flex flex-col items-center text-center"
                     data-aos="fade-up" data-aos-delay="300">
                     <div class="w-14 h-14 bg-forest-green/10 rounded-2xl flex items-center justify-center mb-6">
                         <i data-lucide="users" class="text-forest-green w-8 h-8"></i>
@@ -232,13 +227,13 @@
                     <div class="text-4xl font-bold mb-8">$999<span class="text-base font-normal text-gray-500">
                             /year</span></div>
                     <ul class="space-y-4 mb-10 flex-grow">
-                        <li class="flex items-center gap-3 text-sm"><i data-lucide="check"
+                        <li class="flex items-center gap-3 text-sm justify-center"><i data-lucide="check"
                                 class="text-honey-gold w-5 h-5"></i> 20kg Custom Branded Honey</li>
-                        <li class="flex items-center gap-3 text-sm"><i data-lucide="check"
+                        <li class="flex items-center gap-3 text-sm justify-center"><i data-lucide="check"
                                 class="text-honey-gold w-5 h-5"></i> Unlimited Workshops</li>
-                        <li class="flex items-center gap-3 text-sm"><i data-lucide="check"
+                        <li class="flex items-center gap-3 text-sm justify-center"><i data-lucide="check"
                                 class="text-honey-gold w-5 h-5"></i> Priority Harvesting Event</li>
-                        <li class="flex items-center gap-3 text-sm"><i data-lucide="check"
+                        <li class="flex items-center gap-3 text-sm justify-center"><i data-lucide="check"
                                 class="text-honey-gold w-5 h-5"></i> Corporate Social Impact Report</li>
                     </ul>
                     <a href="signup.html"
@@ -251,15 +246,17 @@
 
     <!-- Harvest Schedule -->
     <section id="harvest" class="py-24 px-6 md:px-12 bg-white dark:bg-zinc-900 overflow-hidden">
-        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
-            <div class="lg:w-1/2" data-aos="fade-right">
+        <div class="max-w-7xl mx-auto flex flex-col items-center text-center gap-16">
+            <div class="max-w-3xl" data-aos="fade-up">
                 <h2 class="text-4xl md:text-5xl font-bold mb-6 playfair">Seasonal <span
                         class="text-honey-gold">Harvest</span> Schedule</h2>
                 <p class="text-gray-600 dark:text-gray-400 mb-10 leading-relaxed">Nature has its own rhythm. Follow our
                     seasonal timeline to know exactly when your bees are most active and when your honey reaches peak
                     flavor profile.</p>
-
-                <div class="space-y-8">
+            </div>
+            <div class="flex flex-col lg:flex-row items-center gap-16 w-full">
+                <div class="lg:w-1/2" data-aos="fade-right">
+                    <div class="space-y-8">
                     <div
                         class="flex items-start gap-6 p-6 rounded-2xl bg-warm-beige/50 dark:bg-zinc-800/50 border border-honey-gold/10">
                         <div class="bg-white dark:bg-zinc-900 p-3 rounded-xl shadow-sm text-center min-w-[70px]">
@@ -316,6 +313,7 @@
                     </div>
                 </div>
             </div>
+            </div>
         </div>
     </section>
 
@@ -331,7 +329,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-all group"
+                <div class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-all group flex flex-col items-center text-center"
                     data-aos="zoom-in" data-aos-delay="100">
                     <div
                         class="w-12 h-12 bg-honey-gold/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -340,7 +338,7 @@
                     <h4 class="text-xl font-bold mb-3">Safety Training</h4>
                     <p class="text-sm text-gray-400">Complete safety briefing and protective gear fitting.</p>
                 </div>
-                <div class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-all group"
+                <div class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-all group flex flex-col items-center text-center"
                     data-aos="zoom-in" data-aos-delay="200">
                     <div
                         class="w-12 h-12 bg-honey-gold/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -349,7 +347,7 @@
                     <h4 class="text-xl font-bold mb-3">Hive Inspection</h4>
                     <p class="text-sm text-gray-400">Learn to identify the Queen, drones, and worker bees.</p>
                 </div>
-                <div class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-all group"
+                <div class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-all group flex flex-col items-center text-center"
                     data-aos="zoom-in" data-aos-delay="300">
                     <div
                         class="w-12 h-12 bg-honey-gold/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -359,7 +357,7 @@
                     <p class="text-sm text-gray-400">Spin the extractor and taste fresh honey straight from the comb.
                     </p>
                 </div>
-                <div class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-all group"
+                <div class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-all group flex flex-col items-center text-center"
                     data-aos="zoom-in" data-aos-delay="400">
                     <div
                         class="w-12 h-12 bg-honey-gold/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -382,15 +380,13 @@
     <!-- Virtual Hive Preview -->
     <section class="py-24 px-6 md:px-12 bg-warm-beige/30 dark:bg-zinc-950">
         <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col lg:flex-row items-end justify-between mb-12 gap-6" data-aos="fade-up">
-                <div>
-                    <h2 class="text-4xl md:text-5xl font-bold mb-4 playfair">Virtual Hive <span
-                            class="text-honey-gold">Cam</span></h2>
-                    <p class="text-gray-600 dark:text-gray-400">Monitor your colony 24/7 through our state-of-the-art
-                        IoT enabled hives.</p>
-                </div>
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 playfair">Virtual Hive <span
+                        class="text-honey-gold">Cam</span></h2>
+                <p class="text-gray-600 dark:text-gray-400 mb-6">Monitor your colony 24/7 through our state-of-the-art
+                    IoT enabled hives.</p>
                 <a href="login.html"
-                    class="flex items-center gap-2 text-honey-gold font-bold border-b-2 border-honey-gold pb-1 hover:gap-4 transition-all">
+                    class="inline-flex items-center gap-2 text-honey-gold font-bold border-b-2 border-honey-gold pb-1 hover:gap-4 transition-all">
                     Access Dashboard <i data-lucide="arrow-right" class="w-5 h-5"></i>
                 </a>
             </div>
@@ -506,9 +502,10 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <div>
-                    <a href="index.html" class="flex items-center gap-2 mb-8">
-                        <span
-                            class="text-2xl font-bold playfair tracking-tight text-dark-brown dark:text-white">Bee<span
+                    <a href="index.html" class="flex items-center gap-2 mb-8 group">
+                        <i data-lucide="hexagon"
+                            class="w-8 h-8 text-honey-gold fill-honey-gold/20 group-hover:rotate-12 transition-transform"></i>
+                        <span class="text-2xl font-bold playfair tracking-tight text-dark-brown dark:text-white">Bee<span
                                 class="text-honey-gold">Hive</span></span>
                     </a>
                     <p class="text-gray-400 text-sm leading-relaxed mb-6">Pioneering sustainable beekeeping and honey

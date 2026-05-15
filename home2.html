@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <title>Honey & Heritage | BeeHive Experience Home 2</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -66,16 +67,16 @@
             <!-- Actions Section -->
             <div class="flex-1 flex justify-end items-center gap-4">
                 <div class="hidden lg:flex items-center gap-4 border-l border-gray-300 dark:border-gray-700 pl-8">
-                    <button id="theme-toggle" class="p-2 hover:bg-honey-gold/10 rounded-full transition-colors">
+                    <button id="theme-toggle" class="p-2 hover:bg-honey-gold/10 rounded-full transition-all duration-300 hover:scale-110 active:scale-95">
                         <i id="theme-icon" data-lucide="moon" class="w-5 h-5"></i>
                     </button>
                     <button id="rtl-toggle"
-                        class="p-2 hover:bg-honey-gold/10 rounded-full transition-colors text-xs font-bold">RTL</button>
+                        class="p-2 hover:bg-honey-gold/10 rounded-full transition-all duration-300 text-xs font-bold hover:scale-110 active:scale-95">RTL</button>
                     <a href="signup.html"
-                        class="bg-honey-gold text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-honey-gold/30 transition-all active:scale-95">Signup</a>
+                        class="bg-honey-gold text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-dark-brown dark:hover:bg-white dark:hover:text-dark-brown hover:shadow-xl hover:shadow-honey-gold/20 hover:-translate-y-0.5 transition-all duration-300 active:scale-95">Signup</a>
                 </div>
                 <!-- Mobile Menu Btn -->
-                <button id="mobile-menu-btn" class="lg:hidden p-2">
+                <button id="mobile-menu-btn" class="lg:hidden p-2 hover:bg-honey-gold/10 rounded-full transition-all hover:scale-110">
                     <i data-lucide="menu" class="w-6 h-6"></i>
                 </button>
             </div>
@@ -95,14 +96,14 @@
             <a href="contact.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Contact</a>
             <div class="flex items-center justify-between mt-4">
                 <div class="flex gap-4">
-                    <button id="theme-toggle-mobile" class="p-2 bg-gray-100 dark:bg-zinc-900 rounded-full"><i
+                    <button id="theme-toggle-mobile" class="p-2 bg-gray-100 dark:bg-zinc-900 rounded-full hover:bg-honey-gold/10 transition-all duration-300 hover:scale-110 active:scale-95"><i
                             data-lucide="moon" class="w-5 h-5"></i></button>
                     <button id="rtl-toggle-mobile"
-                        class="px-4 py-2 bg-gray-100 dark:bg-zinc-900 rounded-lg text-xs font-bold uppercase">RTL</button>
+                        class="px-4 py-2 bg-gray-100 dark:bg-zinc-900 rounded-lg text-xs font-bold uppercase hover:bg-honey-gold/10 transition-all duration-300 hover:scale-110 active:scale-95">RTL</button>
                 </div>
             </div>
             <a href="signup.html"
-                class="w-full bg-honey-gold text-white py-3 rounded-xl text-center font-bold">Signup</a>
+                class="w-full bg-honey-gold text-white py-4 rounded-xl text-center font-bold hover:bg-dark-brown dark:hover:bg-white dark:hover:text-dark-brown transition-all duration-300 active:scale-95 shadow-lg shadow-honey-gold/10">Signup</a>
         </div>
     </nav>
 
@@ -127,12 +128,12 @@
                     Experience the purity of nature. We offer a direct link between you and the ancient pollinators of
                     our farm. Authentic, organic, and premium.
                 </p>
-                <div class="flex flex-wrap justify-center gap-4 mb-16">
+                <div class="flex flex-wrap justify-center gap-4 mb-16 w-full max-w-md mx-auto">
                     <a href="about.html"
-                        class="px-10 py-5 bg-honey-gold text-white rounded-full font-bold hover:bg-white hover:text-forest-green transition-all duration-300 text-lg">Discover
+                        class="px-10 py-5 bg-honey-gold text-white rounded-full font-bold hover:bg-white hover:text-forest-green transition-all duration-300 text-lg w-full sm:w-auto text-center">Discover
                         Our Story</a>
                     <a href="contact.html"
-                        class="px-10 py-5 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-forest-green transition-all duration-300 text-lg">Visit
+                        class="px-10 py-5 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-forest-green transition-all duration-300 text-lg w-full sm:w-auto text-center">Visit
                         the Farm</a>
                 </div>
 
@@ -203,49 +204,55 @@
 
     <!-- Suit Rental & Farm Visit -->
     <section class="py-24 px-6 md:px-12 bg-warm-beige/30 dark:bg-zinc-900">
-        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
-            <div class="lg:w-1/2 grid grid-cols-2 gap-4" data-aos="fade-right">
-                <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&q=80&w=400"
-                    alt="Suit" class="rounded-3xl h-64 w-full object-cover mt-8">
-                <img src="https://images.unsplash.com/photo-1592500305630-419da01a7c33?auto=format&fit=crop&q=80&w=400"
-                    alt="Gear" class="rounded-3xl h-64 w-full object-cover">
-                <img src="https://images.pexels.com/photos/4624329/pexels-photo-4624329.jpeg" alt="Visit"
-                    class="rounded-3xl h-64 w-full object-cover">
-                <img src="https://images.pexels.com/photos/4624324/pexels-photo-4624324.jpeg" alt="Family"
-                    class="rounded-3xl h-64 w-full object-cover mt-8">
-                <img src="https://images.pexels.com/photos/4421111/pexels-photo-4421111.jpeg" alt="Beekeeper"
-                    class="rounded-3xl h-64 w-full object-cover col-span-2">
-            </div>
-            <div class="lg:w-1/2" data-aos="fade-left">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
                 <span class="text-honey-gold font-bold tracking-widest text-sm uppercase mb-4 block">Immersive
                     Tourism</span>
-                <h2 class="text-4xl md:text-5xl font-bold playfair mb-6">Safe & Professional <span
+                <h2 class="text-4xl md:text-6xl font-bold playfair mb-6 text-forest-green dark:text-white">Safe & Professional <span
                         class="text-honey-gold">Farm Visits</span></h2>
-                <p class="text-gray-600 dark:text-gray-400 mb-10 text-lg leading-relaxed">We provide full premium
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">We provide full premium
                     protective gear for all ages. Experience the farm safely under the guidance of our expert team.</p>
-                <div class="space-y-6 mb-10">
-                    <div class="flex gap-4">
-                        <div class="w-10 h-10 bg-honey-gold/10 rounded-full flex items-center justify-center shrink-0">
-                            <i data-lucide="check" class="text-honey-gold w-5 h-5"></i>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2 relative" data-aos="fade-right">
+                    <div class="relative rounded-[3rem] overflow-hidden shadow-2xl group">
+                        <img src="https://images.pexels.com/photos/4624326/pexels-photo-4624326.jpeg"
+                            alt="Professional Beekeeping Experience" class="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-forest-green/40 to-transparent"></div>
+                        <div class="absolute bottom-8 left-8 bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 text-white">
+                            <p class="text-xs uppercase font-bold tracking-widest text-honey-gold mb-2">Live Experience</p>
+                            <h4 class="text-xl font-bold playfair">Safety First Approach</h4>
                         </div>
-                        <p class="text-gray-700 dark:text-gray-300">Ultra-light breathable ventilated suits</p>
-                    </div>
-                    <div class="flex gap-4">
-                        <div class="w-10 h-10 bg-honey-gold/10 rounded-full flex items-center justify-center shrink-0">
-                            <i data-lucide="check" class="text-honey-gold w-5 h-5"></i>
-                        </div>
-                        <p class="text-gray-700 dark:text-gray-300">Sizes available from toddlers to adults (XXL)</p>
-                    </div>
-                    <div class="flex gap-4">
-                        <div class="w-10 h-10 bg-honey-gold/10 rounded-full flex items-center justify-center shrink-0">
-                            <i data-lucide="check" class="text-honey-gold w-5 h-5"></i>
-                        </div>
-                        <p class="text-gray-700 dark:text-gray-300">Sanitized gear after every single use</p>
                     </div>
                 </div>
-                <a href="contact.html"
-                    class="inline-block px-10 py-4 bg-honey-gold text-white rounded-full font-bold hover:shadow-xl transition-all">Rent
-                    Gear & Book Visit</a>
+                <div class="lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left" data-aos="fade-left">
+                    <div class="space-y-6 mb-12 w-full">
+                        <div class="flex items-center lg:items-start gap-4 justify-center lg:justify-start">
+                            <div class="w-12 h-12 bg-honey-gold/10 rounded-2xl flex items-center justify-center shrink-0">
+                                <i data-lucide="shield-check" class="text-honey-gold w-6 h-6"></i>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300 font-medium">Ultra-light breathable ventilated suits</p>
+                        </div>
+                        <div class="flex items-center lg:items-start gap-4 justify-center lg:justify-start">
+                            <div class="w-12 h-12 bg-honey-gold/10 rounded-2xl flex items-center justify-center shrink-0">
+                                <i data-lucide="users" class="text-honey-gold w-6 h-6"></i>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300 font-medium">Sizes available from toddlers to adults (XXL)</p>
+                        </div>
+                        <div class="flex items-center lg:items-start gap-4 justify-center lg:justify-start">
+                            <div class="w-12 h-12 bg-honey-gold/10 rounded-2xl flex items-center justify-center shrink-0">
+                                <i data-lucide="sparkles" class="text-honey-gold w-6 h-6"></i>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300 font-medium">Sanitized gear after every single use</p>
+                        </div>
+                    </div>
+                    <a href="contact.html"
+                        class="inline-flex items-center justify-center px-10 py-5 bg-honey-gold text-white rounded-full font-bold hover:bg-dark-brown dark:hover:bg-white dark:hover:text-dark-brown hover:shadow-2xl hover:shadow-honey-gold/20 hover:-translate-y-1.5 transition-all duration-300 active:scale-95 group shadow-lg shadow-honey-gold/10">
+                        Rent Gear & Book Visit
+                        <i data-lucide="arrow-right" class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -302,25 +309,25 @@
     <!-- Community & Sustainability -->
     <section class="py-24 px-6 md:px-12 bg-forest-green text-white">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div data-aos="fade-right">
+            <div class="flex flex-col items-center text-center" data-aos="fade-right">
                 <h2 class="text-4xl md:text-5xl font-bold playfair mb-8">Our Mission: <br><span
                         class="text-honey-gold">One Billion Bees</span></h2>
-                <p class="text-gray-300 mb-10 text-lg leading-relaxed">We aren't just selling honey; we are building a
+                <p class="text-gray-300 mb-10 text-lg leading-relaxed max-w-2xl mx-auto">We aren't just selling honey; we are building a
                     sanctuary. Every sponsorship helps us plant more pollinator-friendly trees and expand our
                     conservation efforts.</p>
-                <div class="grid grid-cols-2 gap-8 mb-10">
-                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                <div class="grid grid-cols-2 gap-8 mb-10 w-full max-w-lg">
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10 flex flex-col items-center">
                         <i data-lucide="tree-pine" class="text-honey-gold w-8 h-8 mb-4"></i>
                         <h4 class="text-xl font-bold mb-2">5,000+</h4>
                         <p class="text-xs text-gray-500 uppercase tracking-widest">Trees Planted</p>
                     </div>
-                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10 flex flex-col items-center">
                         <i data-lucide="globe" class="text-honey-gold w-8 h-8 mb-4"></i>
                         <h4 class="text-xl font-bold mb-2">12 Awards</h4>
                         <p class="text-xs text-gray-500 uppercase tracking-widest">Global Recognition</p>
                     </div>
                 </div>
-                <a href="about.html" class="flex items-center gap-3 font-bold group">
+                <a href="about.html" class="flex items-center gap-3 font-bold group hover:text-honey-gold transition-colors">
                     Learn about our conservation <i data-lucide="arrow-right"
                         class="group-hover:translate-x-2 transition-transform"></i>
                 </a>
@@ -339,9 +346,10 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <div>
-                    <a href="index.html" class="flex items-center gap-2 mb-8">
-                        <span
-                            class="text-2xl font-bold playfair tracking-tight text-dark-brown dark:text-white">Bee<span
+                    <a href="index.html" class="flex items-center gap-2 mb-8 group">
+                        <i data-lucide="hexagon"
+                            class="w-8 h-8 text-honey-gold fill-honey-gold/20 group-hover:rotate-12 transition-transform"></i>
+                        <span class="text-2xl font-bold playfair tracking-tight text-dark-brown dark:text-white">Bee<span
                                 class="text-honey-gold">Hive</span></span>
                     </a>
                     <p class="text-gray-400 text-sm leading-relaxed mb-6">Pioneering sustainable beekeeping and honey
