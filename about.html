@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,56 +26,41 @@
         }
     </script>
 </head>
+
 <body class="bg-warm-beige/20 dark:bg-zinc-950 text-dark-brown dark:text-gray-100">
 
-    <!-- Navbar (Consistent) -->
-    <nav id="navbar" class="sticky top-0 w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-lg border-b border-gray-100 dark:border-zinc-800 shadow-sm">
-        <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-2 group">
-                <i data-lucide="beaker" class="w-8 h-8 text-honey-gold group-hover:rotate-12 transition-transform"></i>
-                <span class="text-2xl font-bold playfair tracking-tight">Bee<span class="text-honey-gold">Hive</span></span>
-            </a>
-            <div class="hidden lg:flex items-center gap-8">
-                <div class="flex gap-6 items-center text-sm font-medium tracking-wide">
-                    <a href="index.html" class="nav-link">Home 1</a>
-                    <a href="home2.html" class="nav-link">Home 2</a>
-                    <a href="about.html" class="nav-link">About</a>
-                    <a href="sponsorships.html" class="nav-link">Sponsorships</a>
-                    <a href="harvest-schedule.html" class="nav-link">Harvest</a>
-                    <a href="blog.html" class="nav-link">Blog</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </div>
-                <div class="flex items-center gap-4 border-l border-gray-300 dark:border-gray-700 pl-8">
-                    <button id="theme-toggle" class="p-2"><i id="theme-icon" data-lucide="moon" class="w-5 h-5"></i></button>
-                    <button id="rtl-toggle" class="p-2 text-xs font-bold">RTL</button>
-                    <a href="signup.html" class="bg-honey-gold text-white px-6 py-2.5 rounded-full text-sm font-semibold">Signup</a>
-                </div>
-            </div>
-            <button id="mobile-menu-btn" class="lg:hidden p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
-        </div>
-    </nav>
 
     <!-- Navbar -->
-    <nav id="navbar" class="sticky top-0 w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-lg border-b border-gray-100 dark:border-zinc-800 shadow-sm">
+    <nav id="navbar"
+        class="sticky top-0 w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-lg border-b border-gray-100 dark:border-zinc-800 shadow-sm">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <!-- Logo Section -->
             <div class="flex-1 flex justify-start">
                 <a href="index.html" class="flex items-center gap-2 group">
-                    <i data-lucide="beaker" class="w-8 h-8 text-honey-gold group-hover:rotate-12 transition-transform"></i>
-                    <span class="text-2xl font-bold playfair tracking-tight">Bee<span class="text-honey-gold">Hive</span></span>
+                    <i data-lucide="hexagon"
+                        class="w-8 h-8 text-honey-gold fill-honey-gold/20 group-hover:rotate-12 transition-transform"></i>
+                    <span class="text-2xl font-bold playfair tracking-tight text-dark-brown dark:text-white">Bee<span
+                            class="text-honey-gold">Hive</span></span>
                 </a>
             </div>
 
             <!-- Desktop Menu (Centered) -->
             <div class="hidden lg:flex flex-1 justify-center">
                 <div class="flex gap-8 items-center text-sm font-medium tracking-wide">
-                    <a href="index.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Home 1</a>
-                    <a href="home2.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Home 2</a>
-                    <a href="about.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">About</a>
-                    <a href="sponsorships.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Sponsorships</a>
-                    <a href="harvest-schedule.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Harvest</a>
-                    <a href="blog.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Blog</a>
-                    <a href="contact.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Contact</a>
+                    <a href="index.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Home
+                        1</a>
+                    <a href="home2.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Home
+                        2</a>
+                    <a href="about.html"
+                        class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">About</a>
+                    <a href="sponsorships.html"
+                        class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Sponsorships</a>
+                    <a href="harvest-schedule.html"
+                        class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Harvest</a>
+                    <a href="blog.html"
+                        class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Blog</a>
+                    <a href="contact.html"
+                        class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Contact</a>
                 </div>
             </div>
 
@@ -84,8 +70,10 @@
                     <button id="theme-toggle" class="p-2 hover:bg-honey-gold/10 rounded-full transition-colors">
                         <i id="theme-icon" data-lucide="moon" class="w-5 h-5"></i>
                     </button>
-                    <button id="rtl-toggle" class="p-2 hover:bg-honey-gold/10 rounded-full transition-colors text-xs font-bold">RTL</button>
-                    <a href="signup.html" class="bg-honey-gold text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-honey-gold/30 transition-all active:scale-95">Signup</a>
+                    <button id="rtl-toggle"
+                        class="p-2 hover:bg-honey-gold/10 rounded-full transition-colors text-xs font-bold">RTL</button>
+                    <a href="signup.html"
+                        class="bg-honey-gold text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-honey-gold/30 transition-all active:scale-95">Signup</a>
                 </div>
                 <!-- Mobile Menu Btn -->
                 <button id="mobile-menu-btn" class="lg:hidden p-2">
@@ -95,32 +83,70 @@
         </div>
 
         <!-- Mobile Menu (Remains consistent) -->
-        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white dark:bg-black p-6 flex-col gap-4 shadow-xl border-t border-gray-100 dark:border-gray-800 lg:hidden">
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white dark:bg-black p-6 flex-col gap-4 shadow-xl border-t border-gray-100 dark:border-gray-800 lg:hidden">
             <a href="index.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Home 1</a>
             <a href="home2.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Home 2</a>
             <a href="about.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">About</a>
-            <a href="sponsorships.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Sponsorships</a>
-            <a href="harvest-schedule.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Harvest</a>
+            <a href="sponsorships.html"
+                class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Sponsorships</a>
+            <a href="harvest-schedule.html"
+                class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Harvest</a>
             <a href="blog.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Blog</a>
             <a href="contact.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Contact</a>
             <div class="flex items-center justify-between mt-4">
                 <div class="flex gap-4">
-                    <button id="theme-toggle-mobile" class="p-2 bg-gray-100 dark:bg-zinc-900 rounded-full"><i data-lucide="moon" class="w-5 h-5"></i></button>
-                    <button id="rtl-toggle-mobile" class="px-4 py-2 bg-gray-100 dark:bg-zinc-900 rounded-lg text-xs font-bold uppercase">RTL</button>
+                    <button id="theme-toggle-mobile" class="p-2 bg-gray-100 dark:bg-zinc-900 rounded-full"><i
+                            data-lucide="moon" class="w-5 h-5"></i></button>
+                    <button id="rtl-toggle-mobile"
+                        class="px-4 py-2 bg-gray-100 dark:bg-zinc-900 rounded-lg text-xs font-bold uppercase">RTL</button>
                 </div>
             </div>
-            <a href="signup.html" class="w-full bg-honey-gold text-white py-3 rounded-xl text-center font-bold">Signup</a>
+            <a href="signup.html"
+                class="w-full bg-honey-gold text-white py-3 rounded-xl text-center font-bold">Signup</a>
         </div>
     </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-[60vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.pexels.com/photos/27497229/pexels-photo-27497229.jpeg" alt="Bee Farm"
+                class="w-full h-full object-cover scale-105 animate-slow-zoom">
+            <div class="absolute inset-0 bg-gradient-to-b from-forest-green/60 to-warm-beige/20 dark:to-zinc-950/80">
+            </div>
+        </div>
+
+        <div class="relative z-10 text-center px-6" data-aos="fade-up">
+            <nav class="flex justify-center gap-2 text-honey-gold text-xs font-bold uppercase tracking-widest mb-6">
+                <a href="index.html" class="hover:text-white transition-colors text-white/50">Home</a>
+                <span class="text-white/30">/</span>
+                <span class="text-white/80">Our Story</span>
+            </nav>
+            <h1 class="text-5xl md:text-7xl text-white font-bold mb-4 playfair leading-tight">Rooted in <br> <span
+                    class="italic text-honey-gold">Nature</span></h1>
+            <p class="text-lg text-gray-200 max-w-xl mx-auto font-light leading-relaxed">Discover the passion, the
+                people, and the pollinators behind our award-winning honey farm.</p>
+        </div>
+
+        <!-- Decorative Elements -->
+        <div
+            class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-warm-beige/30 dark:from-zinc-950 to-transparent z-10">
+        </div>
+    </header>
 
     <!-- Founder Journey -->
     <section class="py-24 px-6 md:px-12 bg-warm-beige/30 dark:bg-zinc-950">
         <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
             <div class="lg:w-1/2" data-aos="fade-right">
-                <h2 class="text-4xl font-bold mb-8 playfair text-forest-green dark:text-honey-gold">A Journey of a Thousand Wings</h2>
+                <h2 class="text-4xl font-bold mb-8 playfair text-forest-green dark:text-honey-gold">A Journey of a
+                    Thousand Wings</h2>
                 <div class="prose prose-lg text-gray-600 dark:text-gray-400">
-                    <p class="mb-6">It began in 2018 with a single hive in a backyard. Our founder, Arthur Sterling, realized that the local bee populations were dwindling rapidly. What started as a hobby became a passion, and eventually, a mission to connect people back to nature.</p>
-                    <p class="mb-6">"Bees are the heartbeat of our food system," Arthur says. "Without them, the world loses its color and its sustenance. We created BeeHive Sponsorship to give everyone a chance to be part of the solution."</p>
+                    <p class="mb-6">It began in 2018 with a single hive in a backyard. Our founder, Arthur Sterling,
+                        realized that the local bee populations were dwindling rapidly. What started as a hobby became a
+                        passion, and eventually, a mission to connect people back to nature.</p>
+                    <p class="mb-6">"Bees are the heartbeat of our food system," Arthur says. "Without them, the world
+                        loses its color and its sustenance. We created BeeHive Sponsorship to give everyone a chance to
+                        be part of the solution."</p>
                     <div class="flex items-center gap-6 mt-10">
                         <div class="w-16 h-16 rounded-full bg-honey-gold overflow-hidden">
                             <img src="https://i.pravatar.cc/150?u=arthur" alt="Arthur">
@@ -135,7 +161,9 @@
             <div class="lg:w-1/2 relative" data-aos="fade-left">
                 <div class="bg-honey-gold/10 p-12 rounded-[3rem] border border-honey-gold/20">
                     <i data-lucide="quote" class="text-honey-gold w-16 h-16 mb-8 opacity-20"></i>
-                    <p class="text-2xl italic leading-relaxed text-forest-green dark:text-gray-300 font-light">"Our goal isn't just to produce honey, but to foster a community that understands and respects the intricate balance of our ecosystem."</p>
+                    <p class="text-2xl italic leading-relaxed text-forest-green dark:text-gray-300 font-light">"Our goal
+                        isn't just to produce honey, but to foster a community that understands and respects the
+                        intricate balance of our ecosystem."</p>
                 </div>
             </div>
         </div>
@@ -144,25 +172,33 @@
     <!-- Sustainable Mission -->
     <section class="py-24 px-6 md:px-12 bg-white dark:bg-zinc-900">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="p-8 rounded-3xl bg-warm-beige/20 dark:bg-white/5 border border-honey-gold/10" data-aos="fade-up">
+            <div class="p-8 rounded-3xl bg-warm-beige/20 dark:bg-white/5 border border-honey-gold/10"
+                data-aos="fade-up">
                 <i data-lucide="leaf" class="text-honey-gold w-10 h-10 mb-6"></i>
                 <h3 class="text-xl font-bold mb-4">Regenerative</h3>
-                <p class="text-sm text-gray-500">We use practices that restore soil health and increase biodiversity in our local area.</p>
+                <p class="text-sm text-gray-500">We use practices that restore soil health and increase biodiversity in
+                    our local area.</p>
             </div>
-            <div class="p-8 rounded-3xl bg-warm-beige/20 dark:bg-white/5 border border-honey-gold/10" data-aos="fade-up" data-aos-delay="100">
+            <div class="p-8 rounded-3xl bg-warm-beige/20 dark:bg-white/5 border border-honey-gold/10" data-aos="fade-up"
+                data-aos-delay="100">
                 <i data-lucide="droplet" class="text-honey-gold w-10 h-10 mb-6"></i>
                 <h3 class="text-xl font-bold mb-4">Pure Harvest</h3>
-                <p class="text-sm text-gray-500">Zero additives, zero pesticides. Just pure, raw honey exactly as the bees intended.</p>
+                <p class="text-sm text-gray-500">Zero additives, zero pesticides. Just pure, raw honey exactly as the
+                    bees intended.</p>
             </div>
-            <div class="p-8 rounded-3xl bg-warm-beige/20 dark:bg-white/5 border border-honey-gold/10" data-aos="fade-up" data-aos-delay="200">
+            <div class="p-8 rounded-3xl bg-warm-beige/20 dark:bg-white/5 border border-honey-gold/10" data-aos="fade-up"
+                data-aos-delay="200">
                 <i data-lucide="users" class="text-honey-gold w-10 h-10 mb-6"></i>
                 <h3 class="text-xl font-bold mb-4">Educational</h3>
-                <p class="text-sm text-gray-500">We believe knowledge is power. Our workshops have trained over 5,000 eco-warriors.</p>
+                <p class="text-sm text-gray-500">We believe knowledge is power. Our workshops have trained over 5,000
+                    eco-warriors.</p>
             </div>
-            <div class="p-8 rounded-3xl bg-warm-beige/20 dark:bg-white/5 border border-honey-gold/10" data-aos="fade-up" data-aos-delay="300">
+            <div class="p-8 rounded-3xl bg-warm-beige/20 dark:bg-white/5 border border-honey-gold/10" data-aos="fade-up"
+                data-aos-delay="300">
                 <i data-lucide="heart" class="text-honey-gold w-10 h-10 mb-6"></i>
                 <h3 class="text-xl font-bold mb-4">Conservation</h3>
-                <p class="text-sm text-gray-500">20% of all proceeds go directly into bee habitat restoration and research.</p>
+                <p class="text-sm text-gray-500">20% of all proceeds go directly into bee habitat restoration and
+                    research.</p>
             </div>
         </div>
     </section>
@@ -171,8 +207,11 @@
     <section class="py-24 px-6 md:px-12 bg-forest-green text-white">
         <div class="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse gap-16 items-center">
             <div class="lg:w-1/2" data-aos="fade-left">
-                <h2 class="text-4xl md:text-5xl font-bold playfair mb-6">The <span class="text-honey-gold">Conservation</span> Impact</h2>
-                <p class="text-gray-300 mb-8 leading-relaxed">Since our inception, we've successfully reintroduced 12 endangered bee species to the region. Our farm serves as a safe haven, free from the threats of industrial agriculture.</p>
+                <h2 class="text-4xl md:text-5xl font-bold playfair mb-6">The <span
+                        class="text-honey-gold">Conservation</span> Impact</h2>
+                <p class="text-gray-300 mb-8 leading-relaxed">Since our inception, we've successfully reintroduced 12
+                    endangered bee species to the region. Our farm serves as a safe haven, free from the threats of
+                    industrial agriculture.</p>
                 <div class="space-y-4">
                     <div class="flex justify-between text-sm font-bold uppercase tracking-widest mb-1">
                         <span>Pollinator Habitat Restoration</span>
@@ -193,8 +232,11 @@
             </div>
             <div class="lg:w-1/2" data-aos="fade-right">
                 <div class="relative group">
-                    <img src="https://images.unsplash.com/photo-1590779033100-9f60a05a013d?auto=format&fit=crop&q=80&w=800" alt="Impact" class="rounded-[4rem] w-full h-[500px] object-cover">
-                    <div class="absolute inset-0 bg-honey-gold/20 group-hover:bg-honey-gold/0 transition-colors rounded-[4rem]"></div>
+                    <img src="https://images.unsplash.com/photo-1590779033100-9f60a05a013d?auto=format&fit=crop&q=80&w=800"
+                        alt="Impact" class="rounded-[4rem] w-full h-[500px] object-cover">
+                    <div
+                        class="absolute inset-0 bg-honey-gold/20 group-hover:bg-honey-gold/0 transition-colors rounded-[4rem]">
+                    </div>
                 </div>
             </div>
         </div>
@@ -203,36 +245,52 @@
     <!-- Why Local -->
     <section class="py-24 px-6 md:px-12 bg-white dark:bg-zinc-950">
         <div class="max-w-5xl mx-auto text-center" data-aos="zoom-in">
-            <h2 class="text-4xl md:text-5xl font-bold playfair mb-8 text-forest-green dark:text-white">Why Support Local Beekeeping?</h2>
-            <p class="text-lg text-gray-500 mb-12 leading-relaxed">Supporting local hives means supporting your local environment. Local honey contains pollen from your area, which can help with seasonal allergies, and local apiaries contribute directly to the health of your neighborhood's gardens and parks.</p>
+            <h2 class="text-4xl md:text-5xl font-bold playfair mb-8 text-forest-green dark:text-white">Why Support Local
+                Beekeeping?</h2>
+            <p class="text-lg text-gray-500 mb-12 leading-relaxed">Supporting local hives means supporting your local
+                environment. Local honey contains pollen from your area, which can help with seasonal allergies, and
+                local apiaries contribute directly to the health of your neighborhood's gardens and parks.</p>
             <div class="flex justify-center gap-8">
-                <a href="sponsorships.html" class="px-10 py-4 bg-honey-gold text-white rounded-full font-bold hover:shadow-xl transition-all">Sponsor a Local Hive</a>
+                <a href="sponsorships.html"
+                    class="px-10 py-4 bg-honey-gold text-white rounded-full font-bold hover:shadow-xl transition-all">Sponsor
+                    a Local Hive</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-forest-green text-white py-20 px-6 md:px-12 border-t border-white/5">
+    <footer class="bg-white dark:bg-forest-green text-dark-brown dark:text-white py-20 px-6 md:px-12 border-t border-gray-100 dark:border-white/5">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <div>
                     <a href="index.html" class="flex items-center gap-2 mb-8">
-                        <i data-lucide="hexagone" class="w-8 h-8 text-honey-gold fill-honey-gold/20"></i>
-                        <span class="text-2xl font-bold playfair tracking-tight">BeeHive</span>
+                        <span
+                            class="text-2xl font-bold playfair tracking-tight text-dark-brown dark:text-white">Bee<span class="text-honey-gold">Hive</span></span>
                     </a>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Pioneering sustainable beekeeping and honey experiences since 2018. Join us in protecting the heartbeat of our ecosystem.</p>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Pioneering sustainable beekeeping and honey
+                        experiences since 2018. Join us in protecting the heartbeat of our ecosystem.</p>
                     <div class="flex gap-4">
-                        <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-honey-gold hover:text-white transition-all duration-300"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-                        <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-honey-gold hover:text-white transition-all duration-300"><i data-lucide="facebook" class="w-5 h-5"></i></a>
-                        <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-honey-gold hover:text-white transition-all duration-300"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                        <div class="flex gap-4">
+                            <a href="#" class="w-12 h-12 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-honey-gold group transition-all duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-dark-brown dark:text-honey-gold group-hover:text-white"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-honey-gold group transition-all duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-dark-brown dark:text-honey-gold group-hover:text-white"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-honey-gold group transition-all duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="text-dark-brown dark:text-honey-gold group-hover:text-white"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.933zm-1.292 19.493h2.039L6.486 3.24H4.298l13.311 17.406z"/></svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div>
                     <h4 class="text-lg font-bold mb-8 playfair">Quick Links</h4>
                     <ul class="space-y-4 text-sm text-gray-400">
                         <li><a href="about.html" class="hover:text-honey-gold transition-colors">About Our Farm</a></li>
-                        <li><a href="sponsorships.html" class="hover:text-honey-gold transition-colors">Sponsorship Plans</a></li>
-                        <li><a href="harvest-schedule.html" class="hover:text-honey-gold transition-colors">Harvest Calendar</a></li>
+                        <li><a href="sponsorships.html" class="hover:text-honey-gold transition-colors">Sponsorship
+                                Plans</a></li>
+                        <li><a href="harvest-schedule.html" class="hover:text-honey-gold transition-colors">Harvest
+                                Calendar</a></li>
                         <li><a href="blog.html" class="hover:text-honey-gold transition-colors">Bee Education</a></li>
                         <li><a href="contact.html" class="hover:text-honey-gold transition-colors">Contact Us</a></li>
                     </ul>
@@ -249,19 +307,24 @@
                 </div>
                 <div>
                     <h4 class="text-lg font-bold mb-8 playfair">Join the Buzz</h4>
-                    <p class="text-sm text-gray-400 mb-6">Get seasonal updates and beekeeping tips delivered to your inbox.</p>
+                    <p class="text-sm text-gray-400 mb-6">Get seasonal updates and beekeeping tips delivered to your
+                        inbox.</p>
                     <form class="relative group">
-                        <input type="email" placeholder="Your email address" class="w-full bg-white/5 border border-white/10 rounded-full py-4 px-6 text-sm focus:outline-none focus:border-honey-gold transition-colors pr-16">
-                        <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-honey-gold text-white p-2.5 rounded-full hover:scale-105 transition-transform">
+                        <input type="email" placeholder="Your email address"
+                            class="w-full bg-white/5 border border-white/10 rounded-full py-4 px-6 text-sm focus:outline-none focus:border-honey-gold transition-colors pr-16">
+                        <button
+                            class="absolute right-2 top-1/2 -translate-y-1/2 bg-honey-gold text-white p-2.5 rounded-full hover:scale-105 transition-transform">
                             <i data-lucide="send" class="w-4 h-4"></i>
                         </button>
                     </form>
                 </div>
             </div>
-            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-gray-500 font-medium">
+            <div
+                class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-gray-500 font-medium">
                 <p>&copy; 2026 BeeHive Sponsorship Program. All rights reserved.</p>
                 <div class="flex gap-8">
-                    <span class="flex items-center gap-2">Designed with <i data-lucide="heart" class="w-3 h-3 text-red-500 fill-current"></i> for Bees</span>
+                    <span class="flex items-center gap-2">Designed with <i data-lucide="heart"
+                            class="w-3 h-3 text-red-500 fill-current"></i> for Bees</span>
                     <span>English (US)</span>
                 </div>
             </div>
@@ -269,7 +332,8 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({duration:1000,once:true});</script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
     <script src="script.js"></script>
 </body>
+
 </html>
