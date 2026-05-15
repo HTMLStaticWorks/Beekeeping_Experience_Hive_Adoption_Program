@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsorship Plans | BeeHive Adoption</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'honey-gold': '#D4A017',
+                        'forest-green': '#1A3A3A',
+                        'soft-amber': '#FFBF00',
+                        'warm-beige': '#F5F5DC',
+                        'dark-brown': '#3D2B1F',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#faf7f2] dark:bg-zinc-950 text-dark-brown dark:text-gray-100">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="sticky top-0 w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-lg border-b border-gray-100 dark:border-zinc-800 shadow-sm">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Logo Section -->
+            <div class="flex-1 flex justify-start">
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <i data-lucide="beaker" class="w-8 h-8 text-honey-gold group-hover:rotate-12 transition-transform"></i>
+                    <span class="text-2xl font-bold playfair tracking-tight">Bee<span class="text-honey-gold">Hive</span></span>
+                </a>
+            </div>
+
+            <!-- Desktop Menu (Centered) -->
+            <div class="hidden lg:flex flex-1 justify-center">
+                <div class="flex gap-8 items-center text-sm font-medium tracking-wide">
+                    <a href="index.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Home 1</a>
+                    <a href="home2.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Home 2</a>
+                    <a href="about.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">About</a>
+                    <a href="sponsorships.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Sponsorships</a>
+                    <a href="harvest-schedule.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Harvest</a>
+                    <a href="blog.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Blog</a>
+                    <a href="contact.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Contact</a>
+                </div>
+            </div>
+
+            <!-- Actions Section -->
+            <div class="flex-1 flex justify-end items-center gap-4">
+                <div class="hidden lg:flex items-center gap-4 border-l border-gray-300 dark:border-gray-700 pl-8">
+                    <button id="theme-toggle" class="p-2 hover:bg-honey-gold/10 rounded-full transition-colors">
+                        <i id="theme-icon" data-lucide="moon" class="w-5 h-5"></i>
+                    </button>
+                    <button id="rtl-toggle" class="p-2 hover:bg-honey-gold/10 rounded-full transition-colors text-xs font-bold">RTL</button>
+                    <a href="signup.html" class="bg-honey-gold text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-honey-gold/30 transition-all active:scale-95">Signup</a>
+                </div>
+                <!-- Mobile Menu Btn -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Remains consistent) -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white dark:bg-black p-6 flex-col gap-4 shadow-xl border-t border-gray-100 dark:border-gray-800 lg:hidden">
+            <a href="index.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Home 1</a>
+            <a href="home2.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Home 2</a>
+            <a href="about.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">About</a>
+            <a href="sponsorships.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Sponsorships</a>
+            <a href="harvest-schedule.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Harvest</a>
+            <a href="blog.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Blog</a>
+            <a href="contact.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Contact</a>
+            <div class="flex items-center justify-between mt-4">
+                <div class="flex gap-4">
+                    <button id="theme-toggle-mobile" class="p-2 bg-gray-100 dark:bg-zinc-900 rounded-full"><i data-lucide="moon" class="w-5 h-5"></i></button>
+                    <button id="rtl-toggle-mobile" class="px-4 py-2 bg-gray-100 dark:bg-zinc-900 rounded-lg text-xs font-bold uppercase">RTL</button>
+                </div>
+            </div>
+            <a href="signup.html" class="w-full bg-honey-gold text-white py-3 rounded-xl text-center font-bold">Signup</a>
+        </div>
+    </nav>
+
+    <!-- Sponsorship Hero -->
+    <header class="py-24 px-6 md:px-12 bg-forest-green text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <img src="https://images.unsplash.com/photo-1596720426673-e483d74482d7?auto=format&fit=crop&q=80&w=1200" alt="Pattern" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-7xl mx-auto relative z-10 text-center" data-aos="fade-up">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 playfair">Adopt a <span class="text-honey-gold italic">Colony</span></h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">Choose a sponsorship level that matches your commitment to bee conservation and enjoy premium honey shares.</p>
+        </div>
+    </header>
+
+    <!-- Sponsorship Plans Grid -->
+    <section class="py-24 px-6 md:px-12 -mt-16 relative z-20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Repeat Card logic from index but with more detail -->
+             <!-- Card 1 -->
+             <div class="glass-card bg-white dark:bg-zinc-900 p-10 rounded-[3rem] shadow-xl hover:-translate-y-4 transition-transform duration-500 flex flex-col" data-aos="fade-up">
+                <div class="text-honey-gold font-bold uppercase tracking-widest text-xs mb-4">Solo Explorer</div>
+                <h3 class="text-3xl font-bold playfair mb-6">Garden Hive</h3>
+                <p class="text-gray-500 mb-8 text-sm leading-relaxed">Support a small pollinator patch and receive a sampler of our seasonal harvests.</p>
+                <div class="mb-8">
+                    <span class="text-5xl font-bold">$199</span>
+                    <span class="text-gray-400">/year</span>
+                </div>
+                <ul class="space-y-4 mb-12 flex-grow">
+                    <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-honey-gold w-5 h-5"></i> 2kg Wildflower Honey</li>
+                    <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-honey-gold w-5 h-5"></i> Adoption Certificate</li>
+                    <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-honey-gold w-5 h-5"></i> Quarterly Farm Newsletter</li>
+                    <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-honey-gold w-5 h-5"></i> Annual Farm Picnic Invite</li>
+                </ul>
+                <button class="w-full py-4 bg-forest-green text-white rounded-2xl font-bold hover:bg-honey-gold transition-colors">Select Solo</button>
+            </div>
+             <!-- Card 2 -->
+             <div class="glass-card bg-white dark:bg-zinc-900 p-10 rounded-[3rem] shadow-2xl border-4 border-honey-gold scale-105 hover:-translate-y-4 transition-transform duration-500 flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-honey-gold text-white px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest self-start mb-4">Recommended</div>
+                <h3 class="text-3xl font-bold playfair mb-6 text-honey-gold">Legacy Colony</h3>
+                <p class="text-gray-500 mb-8 text-sm leading-relaxed">Full hive sponsorship with naming rights and premium artisan honey delivery.</p>
+                <div class="mb-8">
+                    <span class="text-5xl font-bold text-honey-gold">$499</span>
+                    <span class="text-gray-400">/year</span>
+                </div>
+                <ul class="space-y-4 mb-12 flex-grow">
+                    <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-honey-gold w-5 h-5"></i> 8kg Artisan Honey Share</li>
+                    <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-honey-gold w-5 h-5"></i> 24/7 Hive Cam Access</li>
+                    <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-honey-gold w-5 h-5"></i> Name Your Queen Bee</li>
+                    <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-honey-gold w-5 h-5"></i> 2 Complimentary Workshops</li>
+                </ul>
+                <button class="w-full py-4 bg-honey-gold text-white rounded-2xl font-bold shadow-lg shadow-honey-gold/30 hover:scale-105 transition-transform">Choose Legacy</button>
+            </div>
+             <!-- Card 3 -->
+             <div class="glass-card bg-white dark:bg-zinc-900 p-10 rounded-[3rem] shadow-xl hover:-translate-y-4 transition-transform duration-500 flex flex-col" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-forest-green dark:text-honey-gold font-bold uppercase tracking-widest text-xs mb-4">Organization</div>
+                <h3 class="text-3xl font-bold playfair mb-6">Sanctuary Partner</h3>
+                <p class="text-gray-500 mb-8 text-sm leading-relaxed">Ideal for businesses. Branded honey jars and employee engagement events.</p>
+                <div class="mb-8">
+                    <span class="text-5xl font-bold">$999</span>
+                    <span class="text-gray-400">/year</span>
+                </div>
+                <ul class="space-y-4 mb-12 flex-grow">
+                    <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-honey-gold w-5 h-5"></i> 20kg Branded Honey Jars</li>
+                    <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-honey-gold w-5 h-5"></i> Logo on Farm Display</li>
+                    <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-honey-gold w-5 h-5"></i> Impact Report for ESG</li>
+                    <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-honey-gold w-5 h-5"></i> VIP Private Harvest Event</li>
+                </ul>
+                <button class="w-full py-4 border-2 border-forest-green text-forest-green dark:text-gray-300 dark:border-gray-700 rounded-2xl font-bold hover:bg-forest-green hover:text-white transition-colors">Become Partner</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hive Adoption Workflow -->
+    <section class="py-24 px-6 md:px-12 bg-white dark:bg-zinc-950 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold playfair mb-4">How it <span class="text-honey-gold">Works</span></h2>
+                <p class="text-gray-500">Your journey from adoption to harvest.</p>
+            </div>
+            <div class="relative">
+                <!-- Progress Line -->
+                <div class="hidden lg:block absolute top-1/2 left-0 w-full h-1 bg-honey-gold/10 -translate-y-1/2 z-0"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+                    <div class="bg-white dark:bg-zinc-900 p-8 rounded-[2rem] shadow-lg border border-gray-100 dark:border-zinc-800 text-center" data-aos="fade-up">
+                        <div class="w-12 h-12 bg-honey-gold text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-6">1</div>
+                        <h4 class="font-bold mb-2">Choose Plan</h4>
+                        <p class="text-xs text-gray-500">Select the sponsorship level that fits your goals.</p>
+                    </div>
+                    <div class="bg-white dark:bg-zinc-900 p-8 rounded-[2rem] shadow-lg border border-gray-100 dark:border-zinc-800 text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-12 h-12 bg-honey-gold text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-6">2</div>
+                        <h4 class="font-bold mb-2">Name Your Queen</h4>
+                        <p class="text-xs text-gray-500">Personalize your colony and receive your welcome kit.</p>
+                    </div>
+                    <div class="bg-white dark:bg-zinc-900 p-8 rounded-[2rem] shadow-lg border border-gray-100 dark:border-zinc-800 text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-12 h-12 bg-honey-gold text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-6">3</div>
+                        <h4 class="font-bold mb-2">Monitor Live</h4>
+                        <p class="text-xs text-gray-500">Watch your bees thrive via the real-time hive cam.</p>
+                    </div>
+                    <div class="bg-white dark:bg-zinc-900 p-8 rounded-[2rem] shadow-lg border border-gray-100 dark:border-zinc-800 text-center" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-12 h-12 bg-honey-gold text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-6">4</div>
+                        <h4 class="font-bold mb-2">Harvest Day</h4>
+                        <p class="text-xs text-gray-500">Join the extraction or receive your jars at home.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="py-24 px-6 md:px-12 bg-warm-beige/20 dark:bg-zinc-900">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold playfair mb-12 text-center">Frequently Asked <span class="text-honey-gold">Questions</span></h2>
+            <div class="space-y-4">
+                <details class="group bg-white dark:bg-zinc-950 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-lg list-none">
+                        Can I visit my hive at any time?
+                        <i data-lucide="chevron-down" class="group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="mt-4 text-gray-500 leading-relaxed">Visits are scheduled to ensure bee safety and expert guidance. Sponsorships include a set number of guided visits, which can be booked via your dashboard.</p>
+                </details>
+                <details class="group bg-white dark:bg-zinc-950 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-lg list-none">
+                        What happens if the hive dies?
+                        <i data-lucide="chevron-down" class="group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="mt-4 text-gray-500 leading-relaxed">Nature can be unpredictable. If a colony fails due to natural causes, we will automatically transition your sponsorship to a healthy backup colony to ensure you still get your harvest share.</p>
+                </details>
+                <details class="group bg-white dark:bg-zinc-950 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-lg list-none">
+                        Do you ship the honey internationally?
+                        <i data-lucide="chevron-down" class="group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="mt-4 text-gray-500 leading-relaxed">Yes, we ship to most countries. Shipping costs for honey shares are calculated at checkout based on your location.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-forest-green text-white py-20 px-6 md:px-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <a href="index.html" class="flex items-center gap-2 mb-8">
+                        <i data-lucide="hexagone" class="w-8 h-8 text-honey-gold fill-honey-gold/20"></i>
+                        <span class="text-2xl font-bold playfair tracking-tight">BeeHive</span>
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Pioneering sustainable beekeeping and honey experiences since 2018. Join us in protecting the heartbeat of our ecosystem.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-honey-gold hover:text-white transition-all duration-300"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-honey-gold hover:text-white transition-all duration-300"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-honey-gold hover:text-white transition-all duration-300"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-8 playfair">Quick Links</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a href="about.html" class="hover:text-honey-gold transition-colors">About Our Farm</a></li>
+                        <li><a href="sponsorships.html" class="hover:text-honey-gold transition-colors">Sponsorship Plans</a></li>
+                        <li><a href="harvest-schedule.html" class="hover:text-honey-gold transition-colors">Harvest Calendar</a></li>
+                        <li><a href="blog.html" class="hover:text-honey-gold transition-colors">Bee Education</a></li>
+                        <li><a href="contact.html" class="hover:text-honey-gold transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-8 playfair">Support</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-honey-gold transition-colors">FAQ</a></li>
+                        <li><a href="#" class="hover:text-honey-gold transition-colors">Safety Guidelines</a></li>
+                        <li><a href="#" class="hover:text-honey-gold transition-colors">Shipping Info</a></li>
+                        <li><a href="#" class="hover:text-honey-gold transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-honey-gold transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-8 playfair">Join the Buzz</h4>
+                    <p class="text-sm text-gray-400 mb-6">Get seasonal updates and beekeeping tips delivered to your inbox.</p>
+                    <form class="relative group">
+                        <input type="email" placeholder="Your email address" class="w-full bg-white/5 border border-white/10 rounded-full py-4 px-6 text-sm focus:outline-none focus:border-honey-gold transition-colors pr-16">
+                        <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-honey-gold text-white p-2.5 rounded-full hover:scale-105 transition-transform">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-gray-500 font-medium">
+                <p>&copy; 2026 BeeHive Sponsorship Program. All rights reserved.</p>
+                <div class="flex gap-8">
+                    <span class="flex items-center gap-2">Designed with <i data-lucide="heart" class="w-3 h-3 text-red-500 fill-current"></i> for Bees</span>
+                    <span>English (US)</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({duration:1000,once:true});</script>
+    <script src="script.js"></script>
+</body>
+</html>

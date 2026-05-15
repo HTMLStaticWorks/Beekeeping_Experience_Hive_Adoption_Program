@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | BeeHive Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#faf7f2] dark:bg-zinc-950 flex flex-col min-h-screen">
+    
+    <!-- Minimal Navbar -->
+    <nav class="p-8 max-w-7xl mx-auto w-full flex items-center justify-between">
+        <div class="flex-1"></div>
+        <a href="index.html" class="flex items-center gap-2 group">
+            <i data-lucide="beaker" class="w-8 h-8 text-honey-gold group-hover:rotate-12 transition-transform"></i>
+            <span class="text-2xl font-bold playfair tracking-tight">Bee<span class="text-honey-gold">Hive</span></span>
+        </a>
+        <div class="flex-1 flex justify-end items-center gap-4">
+            <button id="theme-toggle" class="p-2 hover:bg-honey-gold/10 rounded-full transition-colors text-dark-brown dark:text-gray-100">
+                <i id="theme-icon" data-lucide="moon" class="w-5 h-5"></i>
+            </button>
+            <button id="rtl-toggle" class="p-2 hover:bg-honey-gold/10 rounded-full transition-colors text-xs font-bold text-dark-brown dark:text-gray-100">RTL</button>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center px-6 py-12">
+        <div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <div class="hidden lg:block space-y-12">
+                <h1 class="text-6xl font-bold playfair leading-tight">Welcome back to <br> <span class="text-honey-gold italic">The Colony</span>.</h1>
+                <div class="space-y-8">
+                    <div class="flex gap-6 items-start">
+                        <div class="w-12 h-12 bg-honey-gold/10 rounded-2xl flex items-center justify-center shrink-0"><i data-lucide="activity" class="text-honey-gold"></i></div>
+                        <div>
+                            <h4 class="font-bold mb-1">Live Hive Analytics</h4>
+                            <p class="text-sm text-gray-500 leading-relaxed">Check the temperature, humidity, and activity levels of your sponsored colony.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 items-start">
+                        <div class="w-12 h-12 bg-honey-gold/10 rounded-2xl flex items-center justify-center shrink-0"><i data-lucide="camera" class="text-honey-gold"></i></div>
+                        <div>
+                            <h4 class="font-bold mb-1">Virtual Hive Cam</h4>
+                            <p class="text-sm text-gray-500 leading-relaxed">Access your private 24/7 stream and see your bees at work.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card bg-white dark:bg-zinc-900 p-10 md:p-12 rounded-[3rem] shadow-2xl border border-gray-100 dark:border-zinc-800 w-full max-w-md mx-auto">
+                <h2 class="text-3xl font-bold playfair mb-2">Member Login</h2>
+                <p class="text-gray-500 mb-10 text-sm">Access your sponsor dashboard and harvest updates.</p>
+                
+                <form class="space-y-6">
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold uppercase tracking-widest text-gray-400">Email Address</label>
+                        <input type="email" placeholder="name@email.com" class="w-full bg-gray-50 dark:bg-zinc-800 border border-transparent rounded-2xl py-4 px-6 focus:outline-none focus:bg-white dark:focus:bg-zinc-950 focus:border-honey-gold transition-all">
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center">
+                            <label class="text-xs font-bold uppercase tracking-widest text-gray-400">Password</label>
+                            <a href="#" class="text-[10px] font-bold text-honey-gold uppercase">Forgot?</a>
+                        </div>
+                        <input type="password" placeholder="••••••••" class="w-full bg-gray-50 dark:bg-zinc-800 border border-transparent rounded-2xl py-4 px-6 focus:outline-none focus:bg-white dark:focus:bg-zinc-950 focus:border-honey-gold transition-all">
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" id="remember" class="w-4 h-4 rounded border-gray-300 text-honey-gold focus:ring-honey-gold">
+                        <label for="remember" class="text-sm text-gray-500">Keep me buzzed in (Remember me)</label>
+                    </div>
+                    <button class="w-full py-5 bg-honey-gold text-white rounded-full font-bold text-lg shadow-xl shadow-honey-gold/20 hover:scale-[1.02] transition-transform active:scale-95">Enter Dashboard</button>
+                </form>
+
+                <div class="mt-10 text-center">
+                    <p class="text-sm text-gray-500">Not a sponsor yet? <a href="signup.html" class="text-honey-gold font-bold">Create an account</a></p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="p-8 text-center text-xs text-gray-400">
+        &copy; 2026 BeeHive Sponsorship Program. Secure Login Portal.
+    </footer>
+
+    <script>lucide.createIcons();</script>
+    <script src="script.js"></script>
+</body>
+</html>

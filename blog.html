@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Buzz Blog | BeeHive Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'honey-gold': '#D4A017',
+                        'forest-green': '#1A3A3A',
+                        'soft-amber': '#FFBF00',
+                        'warm-beige': '#F5F5DC',
+                        'dark-brown': '#3D2B1F',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#faf7f2] dark:bg-zinc-950 text-dark-brown dark:text-gray-100">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="sticky top-0 w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-lg border-b border-gray-100 dark:border-zinc-800 shadow-sm">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Logo Section -->
+            <div class="flex-1 flex justify-start">
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <i data-lucide="beaker" class="w-8 h-8 text-honey-gold group-hover:rotate-12 transition-transform"></i>
+                    <span class="text-2xl font-bold playfair tracking-tight">Bee<span class="text-honey-gold">Hive</span></span>
+                </a>
+            </div>
+
+            <!-- Desktop Menu (Centered) -->
+            <div class="hidden lg:flex flex-1 justify-center">
+                <div class="flex gap-8 items-center text-sm font-medium tracking-wide">
+                    <a href="index.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Home 1</a>
+                    <a href="home2.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Home 2</a>
+                    <a href="about.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">About</a>
+                    <a href="sponsorships.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Sponsorships</a>
+                    <a href="harvest-schedule.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Harvest</a>
+                    <a href="blog.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Blog</a>
+                    <a href="contact.html" class="nav-link whitespace-nowrap hover:text-honey-gold transition-colors">Contact</a>
+                </div>
+            </div>
+
+            <!-- Actions Section -->
+            <div class="flex-1 flex justify-end items-center gap-4">
+                <div class="hidden lg:flex items-center gap-4 border-l border-gray-300 dark:border-gray-700 pl-8">
+                    <button id="theme-toggle" class="p-2 hover:bg-honey-gold/10 rounded-full transition-colors">
+                        <i id="theme-icon" data-lucide="moon" class="w-5 h-5"></i>
+                    </button>
+                    <button id="rtl-toggle" class="p-2 hover:bg-honey-gold/10 rounded-full transition-colors text-xs font-bold">RTL</button>
+                    <a href="signup.html" class="bg-honey-gold text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-honey-gold/30 transition-all active:scale-95">Signup</a>
+                </div>
+                <!-- Mobile Menu Btn -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Remains consistent) -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white dark:bg-black p-6 flex-col gap-4 shadow-xl border-t border-gray-100 dark:border-gray-800 lg:hidden">
+            <a href="index.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Home 1</a>
+            <a href="home2.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Home 2</a>
+            <a href="about.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">About</a>
+            <a href="sponsorships.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Sponsorships</a>
+            <a href="harvest-schedule.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Harvest</a>
+            <a href="blog.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Blog</a>
+            <a href="contact.html" class="nav-link py-2 border-b border-gray-50 dark:border-gray-900">Contact</a>
+            <div class="flex items-center justify-between mt-4">
+                <div class="flex gap-4">
+                    <button id="theme-toggle-mobile" class="p-2 bg-gray-100 dark:bg-zinc-900 rounded-full"><i data-lucide="moon" class="w-5 h-5"></i></button>
+                    <button id="rtl-toggle-mobile" class="px-4 py-2 bg-gray-100 dark:bg-zinc-900 rounded-lg text-xs font-bold uppercase">RTL</button>
+                </div>
+            </div>
+            <a href="signup.html" class="w-full bg-honey-gold text-white py-3 rounded-xl text-center font-bold">Signup</a>
+        </div>
+    </nav>
+
+    <!-- Blog Hero -->
+    <header class="py-24 px-6 md:px-12 bg-white dark:bg-zinc-900 border-b border-gray-100 dark:border-zinc-800">
+        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 playfair">The <span class="text-honey-gold italic">Buzz</span> Blog</h1>
+            <p class="text-xl text-gray-500 max-w-2xl mx-auto">Stories from the apiary, beekeeping tips, and the science of organic honey.</p>
+            <div class="mt-12 flex flex-wrap justify-center gap-4">
+                <button class="px-6 py-2 bg-honey-gold text-white rounded-full text-sm font-bold">All Stories</button>
+                <button class="px-6 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm font-bold hover:bg-honey-gold/10 transition-all">Conservation</button>
+                <button class="px-6 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm font-bold hover:bg-honey-gold/10 transition-all">Beekeeping 101</button>
+                <button class="px-6 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm font-bold hover:bg-honey-gold/10 transition-all">Honey Health</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Feed -->
+    <section class="py-24 px-6 md:px-12 bg-[#faf7f2] dark:bg-zinc-950">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Article 1 -->
+                <article class="group cursor-pointer" data-aos="fade-up">
+                    <div class="aspect-video rounded-[2.5rem] overflow-hidden mb-8 shadow-lg relative">
+                        <img src="https://images.unsplash.com/photo-1587334206574-327c1321442c?auto=format&fit=crop&q=80&w=600" alt="Blog 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-6 left-6 bg-white/90 backdrop-blur px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-honey-gold">Conservation</div>
+                    </div>
+                    <div class="px-4">
+                        <span class="text-xs text-gray-400 font-semibold mb-3 block">May 12, 2026 • 5 min read</span>
+                        <h3 class="text-2xl font-bold playfair mb-4 group-hover:text-honey-gold transition-colors">The Secret Language of Bees: Understanding the Waggle Dance</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Discover how honey bees communicate the location of nectar-rich flower patches to their sisters through complex movements...</p>
+                        <a href="#" class="font-bold text-sm flex items-center gap-2 text-forest-green dark:text-honey-gold group-hover:gap-4 transition-all">Read Full Story <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                </article>
+                <!-- Article 2 -->
+                <article class="group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="aspect-video rounded-[2.5rem] overflow-hidden mb-8 shadow-lg relative">
+                        <img src="https://images.unsplash.com/photo-1590779033100-9f60a05a013d?auto=format&fit=crop&q=80&w=600" alt="Blog 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-6 left-6 bg-white/90 backdrop-blur px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-honey-gold">Honey Health</div>
+                    </div>
+                    <div class="px-4">
+                        <span class="text-xs text-gray-400 font-semibold mb-3 block">May 08, 2026 • 8 min read</span>
+                        <h3 class="text-2xl font-bold playfair mb-4 group-hover:text-honey-gold transition-colors">Raw vs Processed Honey: Why Real Honey Matters for Your Immune System</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Most supermarket honey has been pasteurized and filtered, stripping away the essential enzymes and pollen. Here's why raw is king...</p>
+                        <a href="#" class="font-bold text-sm flex items-center gap-2 text-forest-green dark:text-honey-gold group-hover:gap-4 transition-all">Read Full Story <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                </article>
+                <!-- Article 3 -->
+                <article class="group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                    <div class="aspect-video rounded-[2.5rem] overflow-hidden mb-8 shadow-lg relative">
+                        <img src="https://images.unsplash.com/photo-1507666405821-42937952eaf3?auto=format&fit=crop&q=80&w=600" alt="Blog 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-6 left-6 bg-white/90 backdrop-blur px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-honey-gold">Beekeeping</div>
+                    </div>
+                    <div class="px-4">
+                        <span class="text-xs text-gray-400 font-semibold mb-3 block">May 01, 2026 • 12 min read</span>
+                        <h3 class="text-2xl font-bold playfair mb-4 group-hover:text-honey-gold transition-colors">How to Support Native Pollinators in Your Own Backyard This Summer</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">You don't need a farm to save the bees. Learn how to plant a pollinator-friendly garden even on a small balcony or urban space...</p>
+                        <a href="#" class="font-bold text-sm flex items-center gap-2 text-forest-green dark:text-honey-gold group-hover:gap-4 transition-all">Read Full Story <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Featured Section (Honey Health) -->
+            <div class="mt-24 p-12 rounded-[4rem] bg-forest-green text-white flex flex-col lg:flex-row items-center gap-16" data-aos="zoom-in">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1584305602331-508b472e39e5?auto=format&fit=crop&q=80&w=800" alt="Health" class="rounded-[3rem] shadow-2xl h-[400px] w-full object-cover">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold playfair mb-6">The <span class="text-honey-gold">Healing Power</span> of Real Honey</h2>
+                    <p class="text-gray-300 mb-8 text-lg leading-relaxed">Did you know raw honey has been used for wound healing and throat soothing for over 4,000 years? Our latest deep-dive explores the anti-microbial properties of high-pollen honey.</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle" class="text-honey-gold"></i> Rich in Antioxidants</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle" class="text-honey-gold"></i> Natural Energy Booster</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle" class="text-honey-gold"></i> Soothes Digestive Issues</li>
+                    </ul>
+                    <a href="#" class="px-8 py-3 bg-honey-gold text-white rounded-full font-bold">Download Health Guide</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conservation Insights -->
+    <section class="py-24 px-6 md:px-12 bg-white dark:bg-zinc-900">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-4xl font-bold playfair mb-6">Bee <span class="text-honey-gold">Conservation</span> Insights</h2>
+                <p class="text-gray-500 mb-8 text-lg">We track the health of over 200 colonies in real-time. Our blog provides monthly data-driven reports on hive strength and local biodiversity trends.</p>
+                <div class="p-8 bg-warm-beige/20 dark:bg-zinc-800 rounded-3xl border border-honey-gold/10">
+                    <h4 class="font-bold mb-4">Latest Stats:</h4>
+                    <div class="flex justify-between items-center py-3 border-b border-gray-100 dark:border-zinc-700">
+                        <span class="text-sm text-gray-500">New Colonies Established</span>
+                        <span class="font-bold text-honey-gold">+12%</span>
+                    </div>
+                    <div class="flex justify-between items-center py-3 border-b border-gray-100 dark:border-zinc-700">
+                        <span class="text-sm text-gray-500">Flower Diversity Index</span>
+                        <span class="font-bold text-honey-gold">High (8.2/10)</span>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1596720426673-e483d74482d7?auto=format&fit=crop&q=80&w=800" alt="Conservation" class="rounded-[3rem] h-[500px] w-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-forest-green text-white py-20 px-6 md:px-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <a href="index.html" class="flex items-center gap-2 mb-8">
+                        <i data-lucide="hexagone" class="w-8 h-8 text-honey-gold fill-honey-gold/20"></i>
+                        <span class="text-2xl font-bold playfair tracking-tight">BeeHive</span>
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Pioneering sustainable beekeeping and honey experiences since 2018. Join us in protecting the heartbeat of our ecosystem.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-honey-gold hover:text-white transition-all duration-300"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-honey-gold hover:text-white transition-all duration-300"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-honey-gold hover:text-white transition-all duration-300"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-8 playfair">Quick Links</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a href="about.html" class="hover:text-honey-gold transition-colors">About Our Farm</a></li>
+                        <li><a href="sponsorships.html" class="hover:text-honey-gold transition-colors">Sponsorship Plans</a></li>
+                        <li><a href="harvest-schedule.html" class="hover:text-honey-gold transition-colors">Harvest Calendar</a></li>
+                        <li><a href="blog.html" class="hover:text-honey-gold transition-colors">Bee Education</a></li>
+                        <li><a href="contact.html" class="hover:text-honey-gold transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-8 playfair">Support</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-honey-gold transition-colors">FAQ</a></li>
+                        <li><a href="#" class="hover:text-honey-gold transition-colors">Safety Guidelines</a></li>
+                        <li><a href="#" class="hover:text-honey-gold transition-colors">Shipping Info</a></li>
+                        <li><a href="#" class="hover:text-honey-gold transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-honey-gold transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-8 playfair">Join the Buzz</h4>
+                    <p class="text-sm text-gray-400 mb-6">Get seasonal updates and beekeeping tips delivered to your inbox.</p>
+                    <form class="relative group">
+                        <input type="email" placeholder="Your email address" class="w-full bg-white/5 border border-white/10 rounded-full py-4 px-6 text-sm focus:outline-none focus:border-honey-gold transition-colors pr-16">
+                        <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-honey-gold text-white p-2.5 rounded-full hover:scale-105 transition-transform">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-gray-500 font-medium">
+                <p>&copy; 2026 BeeHive Sponsorship Program. All rights reserved.</p>
+                <div class="flex gap-8">
+                    <span class="flex items-center gap-2">Designed with <i data-lucide="heart" class="w-3 h-3 text-red-500 fill-current"></i> for Bees</span>
+                    <span>English (US)</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({duration:1000,once:true});</script>
+    <script src="script.js"></script>
+</body>
+</html>

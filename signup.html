@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Join the Hive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#faf7f2] dark:bg-zinc-950 flex flex-col min-h-screen">
+    
+    <!-- Minimal Navbar -->
+    <nav class="p-8 max-w-7xl mx-auto w-full flex items-center justify-between">
+        <div class="flex-1"></div>
+        <a href="index.html" class="flex items-center gap-2 group">
+            <i data-lucide="beaker" class="w-8 h-8 text-honey-gold group-hover:rotate-12 transition-transform"></i>
+            <span class="text-2xl font-bold playfair tracking-tight">Bee<span class="text-honey-gold">Hive</span></span>
+        </a>
+        <div class="flex-1 flex justify-end items-center gap-4">
+            <button id="theme-toggle" class="p-2 hover:bg-honey-gold/10 rounded-full transition-colors text-dark-brown dark:text-gray-100">
+                <i id="theme-icon" data-lucide="moon" class="w-5 h-5"></i>
+            </button>
+            <button id="rtl-toggle" class="p-2 hover:bg-honey-gold/10 rounded-full transition-colors text-xs font-bold text-dark-brown dark:text-gray-100">RTL</button>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center px-6 py-12">
+        <div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <div class="glass-card bg-white dark:bg-zinc-900 p-10 md:p-12 rounded-[3rem] shadow-2xl border border-gray-100 dark:border-zinc-800 w-full max-w-md mx-auto order-2 lg:order-1">
+                <h2 class="text-3xl font-bold playfair mb-2">Create Account</h2>
+                <p class="text-gray-500 mb-10 text-sm">Join the ecosystem and start your sponsorship.</p>
+                
+                <form class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400">First Name</label>
+                            <input type="text" placeholder="John" class="w-full bg-gray-50 dark:bg-zinc-800 border border-transparent rounded-2xl py-3 px-6 focus:outline-none focus:bg-white focus:border-honey-gold transition-all">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Last Name</label>
+                            <input type="text" placeholder="Doe" class="w-full bg-gray-50 dark:bg-zinc-800 border border-transparent rounded-2xl py-3 px-6 focus:outline-none focus:bg-white focus:border-honey-gold transition-all">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Email Address</label>
+                        <input type="email" placeholder="name@email.com" class="w-full bg-gray-50 dark:bg-zinc-800 border border-transparent rounded-2xl py-3 px-6 focus:outline-none focus:bg-white focus:border-honey-gold transition-all">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Create Password</label>
+                        <input type="password" placeholder="••••••••" class="w-full bg-gray-50 dark:bg-zinc-800 border border-transparent rounded-2xl py-3 px-6 focus:outline-none focus:bg-white focus:border-honey-gold transition-all">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Preferred Sponsorship</label>
+                        <select class="w-full bg-gray-50 dark:bg-zinc-800 border border-transparent rounded-2xl py-3 px-6 focus:outline-none focus:bg-white focus:border-honey-gold transition-all">
+                            <option>Beginner Hive ($199/yr)</option>
+                            <option>Premium Colony ($499/yr)</option>
+                            <option>Community Hive ($999/yr)</option>
+                        </select>
+                    </div>
+                    <div class="pt-4">
+                        <button class="w-full py-5 bg-forest-green text-white rounded-full font-bold text-lg shadow-xl hover:bg-honey-gold transition-all active:scale-95">Register Now</button>
+                    </div>
+                </form>
+
+                <div class="mt-8 text-center">
+                    <p class="text-sm text-gray-500">Already a sponsor? <a href="login.html" class="text-honey-gold font-bold">Log in here</a></p>
+                </div>
+            </div>
+
+            <div class="order-1 lg:order-2 space-y-12">
+                <h1 class="text-6xl font-bold playfair leading-tight">Join the <span class="text-honey-gold italic">Global Movement</span> for Bees.</h1>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-honey-gold mb-2">Artisan Honey</h4>
+                        <p class="text-sm text-gray-500 leading-relaxed">Direct-from-farm honey delivered to your doorstep every season.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-honey-gold mb-2">Eco-Impact</h4>
+                        <p class="text-sm text-gray-500 leading-relaxed">Personalized reports on how your colony is helping the local flora.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-honey-gold mb-2">Member Perks</h4>
+                        <p class="text-sm text-gray-500 leading-relaxed">Early access to limited harvests and exclusive workshop events.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-honey-gold mb-2">Education</h4>
+                        <p class="text-sm text-gray-500 leading-relaxed">Access to our premium beekeeping course and library.</p>
+                    </div>
+                </div>
+                <div class="p-8 rounded-3xl bg-honey-gold/5 border border-honey-gold/10 flex items-center gap-6">
+                    <div class="flex -space-x-4">
+                        <img src="https://i.pravatar.cc/100?u=1" class="w-12 h-12 rounded-full border-4 border-white dark:border-zinc-900 shadow-sm" alt="">
+                        <img src="https://i.pravatar.cc/100?u=2" class="w-12 h-12 rounded-full border-4 border-white dark:border-zinc-900 shadow-sm" alt="">
+                        <img src="https://i.pravatar.cc/100?u=3" class="w-12 h-12 rounded-full border-4 border-white dark:border-zinc-900 shadow-sm" alt="">
+                    </div>
+                    <p class="text-xs font-bold uppercase tracking-widest text-gray-500">Join 1,500+ Active Sponsors</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="p-8 text-center text-xs text-gray-400">
+        &copy; 2026 BeeHive Sponsorship Program. Secure Registration.
+    </footer>
+
+    <script>lucide.createIcons();</script>
+    <script src="script.js"></script>
+</body>
+</html>
