@@ -107,6 +107,56 @@ html:not(.dark) .text-honey-gold {
     color: #90690a !important;
 }
 
+/* Ensure high contrast for text inside dark sections and headers in light mode */
+html:not(.dark) header .text-honey-gold,
+html:not(.dark) section.min-h-screen .text-honey-gold,
+html:not(.dark) .bg-forest-green .text-honey-gold,
+html:not(.dark) [class*="bg-forest-green"] .text-honey-gold {
+    color: #D4A017 !important;
+}
+
+html:not(.dark) header .text-gray-400,
+html:not(.dark) section.min-h-screen .text-gray-400,
+html:not(.dark) .bg-forest-green .text-gray-400,
+html:not(.dark) [class*="bg-forest-green"] .text-gray-400 {
+    color: #E5E7EB !important;
+}
+
+html:not(.dark) header .text-gray-500,
+html:not(.dark) section.min-h-screen .text-gray-500,
+html:not(.dark) .bg-forest-green .text-gray-500,
+html:not(.dark) [class*="bg-forest-green"] .text-gray-500 {
+    color: #D1D5DB !important;
+}
+
+html:not(.dark) header .text-gray-600,
+html:not(.dark) section.min-h-screen .text-gray-600,
+html:not(.dark) .bg-forest-green .text-gray-600,
+html:not(.dark) [class*="bg-forest-green"] .text-gray-600 {
+    color: #9CA3AF !important;
+}
+
+/* Hero section background tint for contrast protection */
+header .z-0::after,
+section.min-h-screen .z-0::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(13, 29, 29, 0.45); /* Rich dark forest green overlay to darken bright highlights of background images */
+    pointer-events: none;
+}
+
+/* Hero section typography shadow protection to make text stand out on busy background images */
+header h1,
+header p,
+header nav,
+header span.tracking-widest,
+section.min-h-screen h1,
+section.min-h-screen p,
+section.min-h-screen .text-honey-gold {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5), 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
 /* Button contrast fixes in light mode */
 html:not(.dark) .bg-honey-gold.text-white,
 html:not(.dark) .bg-honey-gold .text-white,
@@ -131,5 +181,22 @@ html:not(.dark) .glass-card {
     background: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(212, 160, 23, 0.15);
     box-shadow: 0 8px 32px 0 rgba(61, 43, 31, 0.06);
+}
+
+/* Prevent glass-card from overriding explicit bg-forest-green in light mode */
+html:not(.dark) .glass-card.bg-forest-green {
+    background: #1A3A3A !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Responsive adjustments for inner headers on mobile and tablet to prevent text from overlapping bottom fades */
+@media (max-w: 1023px) {
+    header.h-\[60vh\],
+    header.min-h-\[60vh\] {
+        height: auto !important;
+        min-height: 480px !important;
+        padding-top: 6rem !important; /* clears sticky navbar */
+        padding-bottom: 4rem !important; /* pushes text above bottom fade */
+    }
 }
 
