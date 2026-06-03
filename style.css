@@ -89,3 +89,47 @@ h1, h2, h3, .playfair {
 .animate-float {
     animation: float 4s ease-in-out infinite;
 }
+
+/* Light Mode Contrast Enhancements */
+html:not(.dark) .text-gray-400 {
+    color: #5b6575 !important;
+}
+
+html:not(.dark) .text-gray-500 {
+    color: #4b5563 !important;
+}
+
+html:not(.dark) .text-gray-600 {
+    color: #374151 !important;
+}
+
+html:not(.dark) .text-honey-gold {
+    color: #90690a !important;
+}
+
+/* Button contrast fixes in light mode */
+html:not(.dark) .bg-honey-gold.text-white,
+html:not(.dark) .bg-honey-gold .text-white,
+html:not(.dark) a.bg-honey-gold[class*="text-white"],
+html:not(.dark) button.bg-honey-gold[class*="text-white"] {
+    color: #3D2B1F !important;
+}
+
+html:not(.dark) .bg-honey-gold.text-white:hover,
+html:not(.dark) .bg-honey-gold:hover .text-white,
+html:not(.dark) a.bg-honey-gold[class*="text-white"]:hover,
+html:not(.dark) button.bg-honey-gold[class*="text-white"]:hover {
+    color: #ffffff !important;
+}
+
+html:not(.dark) .hover\:bg-honey-gold:hover {
+    color: #3D2B1F !important;
+}
+
+/* Glassmorphism adjustment for light backgrounds */
+html:not(.dark) .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(212, 160, 23, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(61, 43, 31, 0.06);
+}
+
