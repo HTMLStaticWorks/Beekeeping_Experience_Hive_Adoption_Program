@@ -110,30 +110,41 @@ html:not(.dark) .text-honey-gold {
 /* Ensure high contrast for text inside dark sections and headers in light mode */
 html:not(.dark) header .text-honey-gold,
 html:not(.dark) section.min-h-screen .text-honey-gold,
-html:not(.dark) .bg-forest-green .text-honey-gold,
-html:not(.dark) [class*="bg-forest-green"] .text-honey-gold {
+html:not(.dark) .bg-forest-green .text-honey-gold {
     color: #D4A017 !important;
 }
 
 html:not(.dark) header .text-gray-400,
 html:not(.dark) section.min-h-screen .text-gray-400,
-html:not(.dark) .bg-forest-green .text-gray-400,
-html:not(.dark) [class*="bg-forest-green"] .text-gray-400 {
+html:not(.dark) .bg-forest-green .text-gray-400 {
     color: #E5E7EB !important;
 }
 
 html:not(.dark) header .text-gray-500,
 html:not(.dark) section.min-h-screen .text-gray-500,
-html:not(.dark) .bg-forest-green .text-gray-500,
-html:not(.dark) [class*="bg-forest-green"] .text-gray-500 {
+html:not(.dark) .bg-forest-green .text-gray-500 {
     color: #D1D5DB !important;
 }
 
 html:not(.dark) header .text-gray-600,
 html:not(.dark) section.min-h-screen .text-gray-600,
-html:not(.dark) .bg-forest-green .text-gray-600,
-html:not(.dark) [class*="bg-forest-green"] .text-gray-600 {
+html:not(.dark) .bg-forest-green .text-gray-600 {
     color: #9CA3AF !important;
+}
+
+/* Footer Contrast Protection in Light Mode */
+html:not(.dark) footer input[type="email"] {
+    background-color: #f3f4f6 !important;
+    border-color: #e5e7eb !important;
+    color: #3D2B1F !important;
+}
+
+html:not(.dark) footer input[type="email"]::placeholder {
+    color: #71717a !important;
+}
+
+html:not(.dark) footer [class*="border-white/5"] {
+    border-color: #e5e7eb !important;
 }
 
 /* Hero section background tint for contrast protection */
